@@ -22,6 +22,7 @@ html, body {
 .docs-header {
     text-shadow: rgba(0, 0, 0, 0.14902) 0px 1px 0px;
     padding: 60px 15px 50px;
+    display: none;
 }
 .docs-header,
 .docs-home {
@@ -34,6 +35,9 @@ html, body {
     margin-left: -15px;
 }
 @media (min-width: 768px) {
+    .docs-header {
+        display: block;
+    }
     .docs-header .desc {
         margin-right: 0;
         margin-left: 0;
