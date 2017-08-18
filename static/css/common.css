@@ -153,3 +153,6 @@ html, body {
         margin-top: 60px;
     }
 }
+.post-content img {
+    max-width: 100%;
+}
