@@ -23,3 +23,5 @@ highlighter: rouge
 markdown: kramdown
 
 baidu_analysis: ff1da0dd6c6a814ef6ec49dd10246092
+
+theme: jekyll-theme-architect
