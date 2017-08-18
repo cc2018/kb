@@ -1,13 +1,13 @@
 # Site settings
-name: Just for recording
+name: 金榜教育--给孩子不一样的未来
 email: caojian_1104@126.com
-author: CC-2018
-url: https://cc2018.github.io/cc2018
-github: https://github.com/cc2018/cc2018
+author: 金榜教育
+url: https://cc2018.github.io/kb
+github: https://github.com/cc2018/kb
 baseurl: "/kb"
-description: Some words wanna say
-meta_description: personal blog;
-motto: Some words wanna say
+description: 语文 英语 奥数 物理 化学 【中小学文化辅导 + 绘画 + 书法】
+meta_description: personal education
+motto: 语文 英语 奥数 物理 化学 【中小学文化辅导 + 绘画 + 书法】
 
 #permalink: /:categories/:year/:month/:day/:title/
 permalink: /:year/:month/:day/:title/
