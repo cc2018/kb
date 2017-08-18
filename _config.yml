@@ -1,0 +1,25 @@
+# Site settings
+name: Just for recording
+email: caojian_1104@126.com
+author: CC-2018
+url: https://cc2018.github.io/cc2018
+github: https://github.com/cc2018/cc2018
+baseurl: ""
+description: Some words wanna say
+meta_description: personal blog;
+motto: Some words wanna say
+
+#permalink: /:categories/:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/
+paginate: 10
+plugins: [jekyll-paginate]
+
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+
+github_username: cc2018
+highlighter: rouge
+
+# Build settings
+markdown: kramdown
+
+baidu_analysis: ff1da0dd6c6a814ef6ec49dd10246092

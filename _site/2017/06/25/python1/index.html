@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>python基础(一) - Just for recording</title>
+
+	<link rel="shortcut icon" href="/static/images/favicon.jpg">
+	<link rel="icon" href="/static/images/favicon.jpg">
+
+	<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/static/css/common.css">
+
+	<link rel="canonical" href="/2017/06/25/python1/">
+	<link rel="alternate" type="application/rss+xml" title="Just for recording" href="/feed.xml">
+
+	<meta name="keywords" content="python基础(一), Just for recording, personal blog;">
+	<meta name="description" content="personal blog;">
+
+	<script src="/static/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?ff1da0dd6c6a814ef6ec49dd10246092";
+		  var s = document.getElementsByTagName("script")[0];
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+</head>
+
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">
+        <span>CC-2018</span>
+      </a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/categories/">Categories</a>
+        </li>
+        <li>
+          <a href="/tag">Tag</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <div class="docs-header" id="content">
+  <div class="container">
+      <div class="desc">
+          
+        		<!--
+      		    <h1>python基础(一)</h1>
+      		    <p>Post on Jun 25, 2017 by <a href="/about">CC-2018</a></p>
+      		-->
+      		    <h1>Some words wanna say</h1>
+          
+      </div>
+  </div>
+</div>
+
+    
+      
+<div class="docs-banner">
+  <div class="container">
+      <div class="row">
+          
+          	<a href="/categories/#document-ref">document</a>	/
+          	<a href="/tag/#教程-ref">教程</a>
+          
+      </div>
+
+  </div>
+</div>
+
+    
+
+    <div class="docs-container container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h2>目录</h2>
+  <ul class="nav sidenav">
+<!--
+    
+      
+      
+      
+      
+
+      
+        <li><a href="#year_2017">2017</a>
+          <ul class="nav">
+            <li><a href="#month_2017_August">August</a></li>
+      
+
+      
+        
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+        
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+        
+          
+              <li><a href="#month_2017_July">July</a></li>
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+        
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+        
+          
+              <li><a href="#month_2017_June">June</a></li>
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+        
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+        
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+        
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+        
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+        
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+        
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+            </ul>
+          </li>
+      
+    
+-->
+  </ul>
+</div>
+
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">python基础(一)</h1>
+              <!--
+                <p class="post-meta">Jun 25, 2017 • CC-2018</p>
+              -->
+              <div class="meta">Posted on <span class="postdate">Jun 25, 2017</span> By <a target="_blank" href="http://localhost:4000">CC-2018</a></div>
+              <br />
+            </header>
+            <article class="post-content">
+              <ul id="markdown-toc">
+  <li><a href="#数据类型和变量" id="markdown-toc-数据类型和变量">数据类型和变量</a></li>
+  <li><a href="#条件控制" id="markdown-toc-条件控制">条件控制</a></li>
+  <li><a href="#循环控制" id="markdown-toc-循环控制">循环控制</a></li>
+  <li><a href="#list-和-tuple" id="markdown-toc-list-和-tuple">list 和 tuple</a></li>
+  <li><a href="#dict和set" id="markdown-toc-dict和set">dict和set</a></li>
+  <li><a href="#函数" id="markdown-toc-函数">函数</a></li>
+  <li><a href="#生成器" id="markdown-toc-生成器">生成器</a></li>
+  <li><a href="#迭代器" id="markdown-toc-迭代器">迭代器</a></li>
+</ul>
+
+<p>本片文章记录python一些基本语法和概念。</p>
+
+<h3 id="数据类型和变量">数据类型和变量</h3>
+
+<div class="highlighter-rouge"><pre class="highlight"><code># 整数
+a = 1
+# 浮点数
+b = 3.14
+# 字符串，即可以单引号也可以双引号
+c = 'str'
+d = "tes"
+# 布尔值，使用and 和 or 运算符，非传统的&amp;&amp; 和 ||
+e = True
+f = False
+print( e and f)
+print( e or f)
+# 空值
+object = None
+</code></pre>
+</div>
+
+<p>常量</p>
+
+<p>在Python中，通常用全部大写的变量名表示常量：<code class="highlighter-rouge">PI = 3.14159265359</code></p>
+
+<p>但事实上PI仍然是一个变量，Python根本没有任何机制保证PI不会被改变</p>
+
+<h3 id="条件控制">条件控制</h3>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>age = 3
+if age &gt;= 18:
+    print('adult')
+elif age &gt;= 6:
+    print('teenager')
+else:
+    print('kid')
+</code></pre>
+</div>
+
+<h3 id="循环控制">循环控制</h3>
+<p>python有两种循环</p>
+
+<p><strong>for in循环：</strong></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>names = ['Michael', 'Bob', 'Tracy']
+for name in names:
+    print(name)
+</code></pre>
+</div>
+
+<p>如果想遍历数组，并获取下标，稍显麻烦：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>names = ['Michael', 'Bob', 'Tracy']
+for index, val in enumerate(names):
+    print 'index is %d, val is %s' % (index, val)
+</code></pre>
+</div>
+
+<p>如果想遍历某范围整数，可用range生成整数序列：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>sum = 0
+for x in range(101):
+    sum = sum + x
+print(sum)
+</code></pre>
+</div>
+
+<p><strong>while循环：</strong></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>sum = 0
+n = 99
+while n &gt; 0:
+    sum = sum + n
+    n = n - 2
+print(sum)
+</code></pre>
+</div>
+
+<h3 id="list-和-tuple">list 和 tuple</h3>
+<p>list是一种有序的集合，以中括号表示，可以随时添加和删除其中的元素。</p>
+
+<p><code class="highlighter-rouge">s = ['python', 'java', p, 'scheme']</code></p>
+
+<p>tuple是另一种有序列表，叫元组，以小括号表示。tuple和list非常类似，但是tuple一旦初始化就不能修改。</p>
+
+<p><code class="highlighter-rouge">classmates = ('Michael', 'Bob', 'Tracy')</code></p>
+
+<p>只有1个元素的tuple定义时必须加一个逗号<code class="highlighter-rouge">,</code>，来消除括号计算歧义。</p>
+
+<p>两种有序列表都是从0开始索引歌，也可以用负数如-1来从最后一个元素开始索引。</p>
+
+<p>切片</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>L = ['Michael', 'Sarah', 'Tracy', 'Bob', 'Jack']
+# 取前3个元素，从索引0开始取，直到索引3为止，但不包括索引3
+L[0:3]
+
+# 倒数切片
+&gt;&gt;&gt; L[-2:]
+['Bob', 'Jack']
+&gt;&gt;&gt; L[-2:-1]
+['Bob']
+
+# 甚至什么都不写，只写[:]就可以原样复制一个list：
+&gt;&gt;&gt; L[:]
+['Michael', 'Sarah', 'Tracy', 'Bob', 'Jack']
+
+</code></pre>
+</div>
+
+<p>字符串也可以使用切片取获取子字符串</p>
+
+<p>列表生成式 List Comprehensions：使用[]为操作符</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code># 生成list [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+&gt;&gt;&gt; list(range(1, 11))
+
+# 跟for循环
+&gt;&gt;&gt; [x * x for x in range(1, 11)]
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+# for循环后面再跟if
+&gt;&gt;&gt; [x * x for x in range(1, 11) if x % 2 == 0]
+[4, 16, 36, 64, 100]
+
+# for循环嵌套
+&gt;&gt;&gt; [m + n for m in 'ABC' for n in 'XYZ']
+['AX', 'AY', 'AZ', 'BX', 'BY', 'BZ', 'CX', 'CY', 'CZ']
+
+# 使用两个变量生成list
+&gt;&gt;&gt; d = {'x': 'A', 'y': 'B', 'z': 'C' }
+&gt;&gt;&gt; [k + '=' + v for k, v in d.items()]
+['y=B', 'x=A', 'z=C']
+
+# 把list中字符串变小
+&gt;&gt;&gt; L = ['Hello', 'World', 'IBM', 'Apple']
+&gt;&gt;&gt; [s.lower() for s in L]
+['hello', 'world', 'ibm', 'apple']
+</code></pre>
+</div>
+
+<h3 id="dict和set">dict和set</h3>
+<p>dict全称dictionary，在其他语言中也称为map，使用键-值（key-value）存储，具有极快的查找速度。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>d = {'Michael': 95, 'Bob': 75, 'Tracy': 85}
+print(d['Michael'])
+</code></pre>
+</div>
+
+<p><em>这里不能用js语法。<code class="highlighter-rouge">d.Michael</code></em></p>
+
+<p>set和dict类似，也是一组key的集合，但不存储value。由于key不能重复，所以，在set中，没有重复的key。</p>
+
+<p><code class="highlighter-rouge">s = {1, 2, 3}</code></p>
+
+<p>可以用set对元素进行过滤</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&gt;&gt;&gt; s = set([1, 1, 2, 2, 3, 3])
+&gt;&gt;&gt; s
+{1, 2, 3}
+</code></pre>
+</div>
+
+<h3 id="函数">函数</h3>
+
+<p><strong>定义函数</strong></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>def my_abs(x):
+    if x &gt;= 0:
+        return x
+    else:
+        return -x
+</code></pre>
+</div>
+
+<p><strong>空函数</strong></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    def nop():
+        pass
+</code></pre>
+</div>
+
+<p>pass构成语法通过，定义空函数的作用类似于先定义接口，后面再作具体实现。</p>
+
+<p><strong>返回多个值</strong></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>import math
+
+def move(x, y, step, angle=0):
+    nx = x + step * math.cos(angle)
+    ny = y - step * math.sin(angle)
+    return nx, ny
+
+x, y = move(100, 100, 60, math.pi / 6)
+print(x, y)
+</code></pre>
+</div>
+
+<p>实际上返回多个值，是返回了一个tuple，在语法上，<strong>返回一个tuple可以省略括号，而多个变量可以同时接收一个tuple</strong>，按位置赋给对应的值，所以，Python的函数返回多值其实就是返回一个tuple，但写起来更方便。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&gt;&gt;&gt; r = move(100, 100, 60, math.pi / 6)
+&gt;&gt;&gt; print(r)
+(151.96152422706632, 70.0)
+</code></pre>
+</div>
+
+<p>再比如：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>a, b = b, a + b
+</code></pre>
+</div>
+
+<p>相当于：</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>t = (b, a + b) # t是一个tuple
+a = t[0]
+b = t[1]
+</code></pre>
+</div>
+
+<p><strong>函数参数</strong></p>
+
+<p>函数除正常定义的必选参数外，还可以使用默认参数、可变参数和关键字参数等形式，使得函数定义出来的接口，不但能处理复杂的参数，还可以简化调用者的代码。</p>
+
+<p>默认参数: 同c++一致，默认参数定义在最后面，但切忌使用可变对象作为默认参数：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>def add_end(L=[]):
+    L.append('END')
+    return L
+
+&gt;&gt;&gt; add_end()
+    ['END']
+&gt;&gt;&gt; add_end()
+    ['END', 'END']
+</code></pre>
+</div>
+
+<p>因为L为一个对象，每次调用该函数，如果改变了L的内容，则下次调用时，默认参数的内容就变了，不再是函数定义时的[]了。</p>
+
+<p>可变参数：顾名思义，可变参数就是传入的参数个数是可变的：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>def calc(*numbers):
+    sum = 0
+    for n in numbers:
+        sum = sum + n * n
+    return sum
+</code></pre>
+</div>
+
+<p>在函数内部，参数numbers接收到的是一个tuple，可以传入任意个参数，包括0个参数。有点类似前面返回多个值，用多个值接受一个tuple的相反情况。</p>
+
+<p>如果已经有一个list或者tuple，要调用一个可变参数怎么办？可以这样做：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&gt;&gt;&gt; nums = [1, 2, 3]
+&gt;&gt;&gt; calc(*nums)
+14
+</code></pre>
+</div>
+
+<p>关键字参数</p>
+
+<p>可变参数允许你传入0个或任意个参数，这些可变参数在函数调用时自动组装为一个tuple。而关键字参数允许你传入0个或任意个含参数名的参数，这些关键字参数在函数内部自动组装为一个dict:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>def person(name, age, **kw):
+    print('name:', name, 'age:', age, 'other:', kw)
+
+&gt;&gt;&gt; person('Bob', 35, city='Beijing')
+name: Bob age: 35 other: {'city': 'Beijing'}
+&gt;&gt;&gt; person('Adam', 45, gender='M', job='Engineer')
+name: Adam age: 45 other: {'gender': 'M', 'job': 'Engineer'}
+
+&gt;&gt;&gt; extra = {'city': 'Beijing', 'job': 'Engineer'}
+&gt;&gt;&gt; person('Jack', 24, city=extra['city'], job=extra['job'])
+name: Jack age: 24 other: {'city': 'Beijing', 'job': 'Engineer'}
+</code></pre>
+</div>
+
+<p>当然，上面复杂的调用可以用简化的写法：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&gt;&gt;&gt; extra = {'city': 'Beijing', 'job': 'Engineer'}
+&gt;&gt;&gt; person('Jack', 24, **extra)
+name: Jack age: 24 other: {'city': 'Beijing', 'job': 'Engineer'}
+</code></pre>
+</div>
+<p><code class="highlighter-rouge">**extra</code>表示把<code class="highlighter-rouge">extra</code>这个dict的所有key-value用关键字参数传入到函数的**kw参数，kw将获得一个dict，注意kw获得的dict是extra的一份拷贝，对kw的改动不会影响到函数外的extra。</p>
+
+<p>关键字参数有什么用？它可以扩展函数的功能。比如，在person函数里，我们保证能接收到name和age这两个参数，但是，如果调用者愿意提供更多的参数，我们也能收到。试想你正在做一个用户注册的功能，除了用户名和年龄是必填项外，其他都是可选项，利用关键字参数来定义这个函数就能满足注册的需求。</p>
+
+<p>命名关键字参数</p>
+
+<p>如果要限制关键字参数的名字，就可以用命名关键字参数，例如，只接收city和job作为关键字参数。这种方式定义的函数如下：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>def person(name, age, *, city, job):
+    print(name, age, city, job)
+
+# 注意调用方式必须指定参数名
+person('Jack', 24, city='Beijing', job='Engineer')
+</code></pre>
+</div>
+
+<p>参数组合</p>
+
+<p>在Python中定义函数，可以用必选参数、默认参数、可变参数、关键字参数和命名关键字参数，这5种参数都可以组合使用。参数定义的顺序必须是：必选参数、默认参数、可变参数、命名关键字参数和关键字参数。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>def f1(a, b, c=0, *args, **kw):
+    print('a =', a, 'b =', b, 'c =', c, 'args =', args, 'kw =', kw)
+
+def f2(a, b, c=0, *, d, **kw):
+    print('a =', a, 'b =', b, 'c =', c, 'd =', d, 'kw =', kw)
+
+&gt;&gt;&gt; f1(1, 2)
+a = 1 b = 2 c = 0 args = () kw = {}
+&gt;&gt;&gt; f1(1, 2, c=3)
+a = 1 b = 2 c = 3 args = () kw = {}
+&gt;&gt;&gt; f1(1, 2, 3, 'a', 'b')
+a = 1 b = 2 c = 3 args = ('a', 'b') kw = {}
+&gt;&gt;&gt; f1(1, 2, 3, 'a', 'b', x=99)
+a = 1 b = 2 c = 3 args = ('a', 'b') kw = {'x': 99}
+&gt;&gt;&gt; f2(1, 2, d=99, ext=None)
+a = 1 b = 2 c = 0 d = 99 kw = {'ext': None}
+
+&gt;&gt;&gt; args = (1, 2, 3, 4)
+&gt;&gt;&gt; kw = {'d': 99, 'x': '#'}
+&gt;&gt;&gt; f1(*args, **kw)
+a = 1 b = 2 c = 3 args = (4,) kw = {'d': 99, 'x': '#'}
+&gt;&gt;&gt; args = (1, 2, 3)
+&gt;&gt;&gt; kw = {'d': 88, 'x': '#'}
+&gt;&gt;&gt; f2(*args, **kw)
+a = 1 b = 2 c = 3 d = 88 kw = {'x': '#'}
+</code></pre>
+</div>
+<p>所以，对于任意函数，<strong>都可以通过类似<code class="highlighter-rouge">func(*args, **kw)</code>的形式调用它，无论它的参数是如何定义的</strong></p>
+
+<h3 id="生成器">生成器</h3>
+<p>使列表元素可以按照某种算法推算出来，不必创建完整的list，从而节省大量的空间，在Python中，这种一边循环一边计算的机制，称为生成器：generator。</p>
+
+<p>要创建一个generator，有很多种方法。第一种方法很简单，只要把一个列表生成式的[]改成()，就创建了一个generator：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&gt;&gt;&gt; g = (x * x for x in range(10))
+&gt;&gt;&gt; g
+&lt;generator object &lt;genexpr&gt; at 0x1022ef630&gt;
+&gt;&gt;&gt; next(g)
+0
+</code></pre>
+</div>
+
+<p>注意这里不是生成tuple，而是一个generator，再比如一个函数generator:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>
+def fib(max):
+    n, a, b = 0, 0, 1
+    while n &lt; max:
+        yield b
+        a, b = b, a + b
+        n = n + 1
+    yield 'ok'
+    # return 不可以带参数
+    return
+
+&gt;&gt;&gt; f = fib(6)
+&gt;&gt;&gt; next(f)
+
+&gt;&gt;&gt; for n in fib(7):
+...     print(n)
+
+</code></pre>
+</div>
+
+<p>使用生成器有两个以下优点：</p>
+<ul>
+  <li>节约大量内存
+    <div class="highlighter-rouge"><pre class="highlight"><code>sum([i for i in xrange(1000000000)])
+sum((i for i in xrange(1000000000)))
+</code></pre>
+    </div>
+  </li>
+  <li>除了延迟计算，生成器还能有效提高代码可读性。例如，求一段文字中，每个单词出现的位置：</li>
+</ul>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>def index_words(text):
+    if text:
+        yield 0
+    for index, letter in enumerate(text, 1):
+        if letter == ' ':
+            yield index
+</code></pre>
+</div>
+
+<p>有点需要注意的是：<strong>生成器只能遍历一次</strong></p>
+
+<h3 id="迭代器">迭代器</h3>
+
+<p>可以直接作用于<code class="highlighter-rouge">for</code>循环的对象统称为可迭代对象：<code class="highlighter-rouge">Iterable</code>，如<code class="highlighter-rouge">list</code>、<code class="highlighter-rouge">tuple</code>、<code class="highlighter-rouge">dict</code>、<code class="highlighter-rouge">set</code>、<code class="highlighter-rouge">str</code>等。</p>
+
+<p>可以被<code class="highlighter-rouge">next()</code>函数调用并不断返回下一个值的对象称为迭代器：<code class="highlighter-rouge">Iterator</code>， 如<code class="highlighter-rouge">generator</code>。</p>
+
+<p>为什么list、dict、str等数据类型不是Iterator？</p>
+
+<p>Python的Iterator对象表示的是一个数据流，Iterator对象可以被next()函数调用并不断返回下一个数据，直到没有数据时抛出StopIteration错误。可以把这个数据流看做是一个有序序列，但我们却不能提前知道序列的长度，只能不断通过next()函数实现按需计算下一个数据，所以Iterator的计算是惰性的，只有在需要返回下一个数据时它才会计算。</p>
+
+<hr />
+<p>本文大部分内容来自廖雪峰老师的<a href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000">Python教程</a>，记录在此只为个人记忆和时常快速翻阅。</p>
+
+            </article>
+        </div>
+      </div>
+      <!-- <div class="panel docs-content">
+        <article class="post-content">
+          <div class="wrapper">
+            <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+          </div>
+        </article>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2016-2017 CC-2018.</p>
+	</div>
+</footer>
+
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/holder.min.js"></script>
+<script src="/static/js/lessismore.js"></script>
+<script src="/static/js/application.js"></script>
+
+
+  </body>
+</html>
