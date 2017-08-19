@@ -5,6 +5,7 @@ title:  "父母课堂│孩子暑假沉迷手机？家长督促功课无效？"
 date:   2017-08-18 19:50:01 +0800
 categories: document
 tag: 教程
+share: /kb/static/images/4.jpg
 ---
 
 * content
