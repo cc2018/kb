@@ -15,6 +15,9 @@
 
 	<meta name="keywords" content="{{ page.title | append: ', ' | append: site.name | append: ', ' | append: site.meta_description}}">
 	<meta name="description" content="{{site.meta_description}}">
+	{% if page.share %}
+	<meta name="sharecontent" data-msg-img="{{ page.share }}" data-msg-title="{{ page.title}}" data-msg-content="{{ page.title}}" data-msg-callBack="" data-line-img="{{ page.share }}" data-line-title="{{ page.title}}" data-line-callBack=""/>
+	{% endif %}
 
 	<script src="{{ '/static/js/jquery.min.js' | prepend: site.baseurl }}"></script>
 	<!--[if lt IE 9]>
@@ -29,4 +32,5 @@
 		  s.parentNode.insertBefore(hm, s);
 		})();
 	</script>
+
 </head>
